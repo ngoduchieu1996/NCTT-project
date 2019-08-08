@@ -1,0 +1,2006 @@
+/*----Fonts----*/
+@font-face {
+  font-family: "Open";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "NeoBold";
+  src: url(../fonts/UTM-Neo-Sans-IntelBold.ttf);
+}
+@font-face {
+  font-family: "NeoRegu";
+  src: url(../fonts/UTM-Neo-Sans-Intel.ttf);
+}
+@font-face {
+  font-family: "Habano";
+  src: url(../fonts/UTM-Habano.ttf);
+}
+@font-face {
+  font-family: "Isadora";
+  src: url(../fonts/UTM-IsadoraR.ttf);
+}
+@font-face {
+  font-family: "Cookie";
+  src: url(../fonts/utm-cookies.ttf);
+}
+@font-face {
+  font-family: "Myriad";
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+  font-family: "MyriadBold";
+  src: url(../fonts/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+  font-family: "Caviar";
+  src: url(../fonts/UTM-Caviar.ttf);
+}
+/*----Color----*/
+
+$green: #00a859;
+$pink: #ec268f;
+$dark-pink: #d81460;
+$darker-pink: #8a0438;
+$text-black: #282828;
+$bg-grey: #ebebeb;
+$bg-dark-grey: #959595;
+$text-footer: #898a8a;
+$blue: #00afef;
+$dark-blue: #0464ae;
+$light-blue: #def6ff;
+$yellow: #fffb94;
+
+$form-1: #ffd3ea;
+$form-2: #b0eaff;
+$form-3: #d4ffd4;
+
+/*----End Color----*/
+// a{
+//   text-decoration: none !important;
+// }
+// a:hover{
+//   color: white !important;
+// }
+// Home page
+/*----Header---*/
+#header {
+  .row {
+    margin: 0 80px;
+  }
+  img {
+    width: 80%;
+    cursor: pointer;
+  }
+  h4 {
+    font-family: "NeoBold";
+    font-size: 30px;
+    color: $pink;
+  }
+  #header-left,
+  .col-lg-5 {
+    margin: auto 0;
+    display: flex;
+    justify-content: baseline;
+    ::placeholder {
+      padding-left: 10px;
+    }
+    input {
+      height: 40px;
+      background-color: $bg-grey;
+      border: none;
+      width: 50%;
+    }
+    a {
+      background-color: $green;
+      padding: 2px 6px;
+      color: white;
+      border: none;
+      font-family: "Open";
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    #language {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  #nav-header {
+    background-color: $bg-grey;
+    text-align: center;
+    margin-bottom: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        display: inline-block;
+        padding: 15px 8px;
+        font-size: 22px;
+        font-family: "Open";
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+      }
+      a:hover {
+        color: white;
+      }
+      .active-tab {
+        background-color: $green;
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
+        background-color: $green;
+      }
+    }
+  }
+  #nav-header-collapse {
+    display: none;
+    #collapse {
+      #nav-collapse {
+        li {
+          a:hover {
+            color: white;
+          }
+          .active-tab {
+            color: white;
+            background-color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------end Header----*/
+
+/*----Banner----*/
+#banner {
+  img {
+    width: 100%;
+  }
+  [class*="carousel-control"] {
+    top: 50%;
+    bottom: 50%;
+    width: 2%;
+    img {
+      width: 100%;
+      padding: 2px;
+    }
+  }
+}
+/*----End Banner----*/
+
+/*----Intro----*/
+#intro {
+  text-align: center;
+  margin: 50px 200px;
+  h3 {
+    font-size: 40px;
+    font-family: "NeoBold";
+    color: #35404a;
+  }
+  p {
+    font-family: "NeoRegu";
+    font-size: 20px;
+    color: $text-black;
+  }
+  span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #span-1 {
+    font-family: "Cookie";
+  }
+  a {
+    display: inline-block;
+    color: white;
+    padding: 6px 20px;
+    margin-top: 15px;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+    font-family: "Myriad";
+  }
+}
+/*----End Intro----*/
+
+/*---- Registry---*/
+#registry {
+  margin: 40px 200px;
+  display: flex;
+  justify-content: center;
+  a {
+    font-family: "NeoBold";
+    background-color: #02b7f1;
+    color: $text-black;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #regis-1 {
+    padding: 20px 80px;
+    margin-right: 30px;
+  }
+  #regis-2 {
+    padding: 20px 58px;
+    margin-left: 30px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+/*---- End Registry---*/
+
+/*----Field----*/
+
+#field,
+#goi-tu-thien {
+  position: relative;
+  .field-background {
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Myriad";
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  .field-item {
+    position: absolute;
+    width: 15%;
+  }
+  #field-item-1 {
+    top: 29%;
+    left: 3%;
+  }
+  #field-item-2 {
+    top: 2%;
+    left: 20%;
+  }
+  #field-item-3 {
+    width: 18%;
+    top: 10%;
+    left: 40%;
+  }
+  #field-item-4 {
+    top: 55%;
+    left: 20%;
+  }
+  #field-item-5 {
+    width: 18%;
+    top: 65%;
+    left: 40%;
+  }
+  #field-item-6 {
+    top: 2%;
+    left: 64%;
+  }
+  #field-item-7 {
+    top: 55%;
+    left: 64%;
+  }
+  #field-item-8 {
+    top: 29%;
+    left: 80%;
+  }
+}
+
+/*----End Field----*/
+
+/*----News-1----*/
+
+#news-1 {
+  position: relative;
+  #news-background {
+    img {
+      width: 100%;
+    }
+  }
+  #more-view {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-family: "Neoregu";
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .news-content {
+    position: absolute;
+    top: 0;
+    margin: 50px 80px 50px 0;
+    .news-item {
+      color: white;
+      font-family: "NeoRegu";
+      h5 {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: -8px;
+      }
+      span {
+        color: $text-footer;
+      }
+      p {
+        margin-top: 10px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .news-item-left {
+      img {
+        width: 100%;
+      }
+      h5 {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 12px;
+      }
+      span {
+        font-size: 8px;
+      }
+    }
+    .news-item-right {
+      img {
+        width: 100%;
+      }
+      h5 {
+        font-size: 12px;
+      }
+      span {
+        font-size: 8px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/*----End News-1----*/
+
+/*----Send-info----*/
+
+#send-info {
+  position: relative;
+  .send-info-content {
+    position: absolute;
+    top: 0;
+    padding: 0 90px;
+  }
+  #send-info-bg {
+    box-shadow: 0 0 1px black;
+    img {
+      width: 100%;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+    }
+  }
+
+  #form-info {
+    padding-top: 30px;
+    h5 {
+      font-family: "NeoBold";
+      -webkit-text-stroke: 1px black;
+      color: white;
+    }
+    input {
+      width: 90%;
+      margin-bottom: 20px;
+      padding: 6px 0;
+      border: none;
+    }
+    #send-form {
+      color: white;
+      background-color: $blue;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      padding: 5px 10px;
+      margin-right: 10%;
+      float: right;
+      text-align: center;
+    }
+    textarea {
+      width: 90%;
+      height: 120px;
+    }
+    ::placeholder {
+      font-family: "Myriad";
+      font-style: italic;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+
+  #story {
+    padding: 60px 0 0 0;
+    padding-left: 50px;
+    font-family: "NeoRegu";
+  }
+  a {
+    background-color: $blue;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  h3,
+  p {
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "NeoBold";
+    letter-spacing: 1.5px;
+  }
+}
+/*----End Send-info----*/
+
+/*----Partner----*/
+
+#partner {
+  padding: 50px 100px;
+  [class*="col"] {
+    margin: auto 0;
+  }
+  img {
+    width: 60%;
+  }
+}
+
+/*----End Partner----*/
+
+/*----Footer----*/
+
+#footer {
+  background-color: $bg-grey;
+  padding: 50px 0;
+  .row {
+    padding: 0 90px;
+  }
+  img {
+    width: 85%;
+  }
+  .contact-info {
+    h4 {
+      font-family: "NeoBold";
+    }
+    p {
+      font-family: "Myriad";
+      color: $text-footer;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .social {
+      img {
+        width: 15%;
+      }
+      .social-item {
+        padding: 10px 15px 0px 0px;
+      }
+    }
+  }
+  .link-footer {
+    a {
+      display: block;
+      color: $text-footer;
+      font-family: "NeoRegu";
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    a:hover {
+      text-decoration: none;
+      text-shadow: 0 0 1px $text-footer;
+    }
+  }
+}
+
+/*----End Footer---*/
+
+// End Home Page
+
+// About page
+
+/*----We----*/
+
+#we {
+  margin: 20px 80px;
+  img {
+    width: 85%;
+  }
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    li {
+      margin-bottom: 5px;
+      color: white;
+      a {
+        position: relative;
+        color: inherit;
+        p {
+          width: 100%;
+          color: inherit;
+          position: absolute;
+          top: 50%;
+          left: 75%;
+          transform: translate(-50%, -50%);
+          font-size: 24px;
+          font-family: "NeoBold";
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .active {
+      color: $yellow;
+    }
+  }
+  .tab-content {
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: $bg-grey;
+    position: relative;
+    font-family: "NeoRegu";
+    h3 {
+      color: $green;
+      margin-bottom: 30px;
+      font-size: 28px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    p {
+      text-indent: 30px;
+      font-size: 20px;
+    }
+    a {
+      position: absolute;
+      background-color: $green;
+      padding: 8px 35px;
+      border-radius: 15px;
+      bottom: 10%;
+      right: 10%;
+      color: white;
+    }
+  }
+}
+#we-768 {
+  display: none;
+}
+
+/*----End We----*/
+
+/*----My Team-----*/
+
+#my-team {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-family: "NeoRegu";
+    font-size: 40px;
+    margin: 50px 0;
+    color: #35404a;
+  }
+}
+
+/*----End My Team-----*/
+
+// End About Page
+
+// Goi Tu Thien page
+
+/*----Goi tu thien----*/
+
+#goi-tu-thien {
+  position: relative;
+  .field-background {
+    img {
+      width: 100%;
+    }
+  }
+  .field-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+  }
+  .goi-tu-thien-text {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 30%;
+    width: 50%;
+  }
+  .nhan-tu-thien {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    font-size: 24px;
+    padding: 6px 10px;
+    background-color: $blue;
+    border-radius: 10px;
+    font-family: "Myriad";
+    i {
+      font-size: 26px;
+    }
+  }
+}
+/*----End Goi tu thien----*/
+
+/*----Call Rise----*/
+#call-rise {
+  background-color: $bg-grey;
+  padding: 100px 0;
+  #call-icon {
+    position: absolute;
+    width: 10%;
+    top: -10%;
+    left: 22%;
+  }
+  .call-rise-text {
+    margin-bottom: 50px;
+    position: relative;
+    padding: 0 200px;
+    text-align: center;
+    font-family: "Myriad";
+    h4 {
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .call-rise-list {
+    padding: 0 60px;
+    .call-rise-item {
+      padding: 0 25px;
+      img {
+        width: 100%;
+        border-top-left-radius: 15px;
+      }
+      .call-title {
+        background-color: $blue;
+        border-bottom-right-radius: 15px;
+        color: white;
+        padding: 10px 0;
+        p {
+          margin-bottom: 0;
+          padding: 0 10px;
+          font-size: 24px;
+          font-family: "NeoRegu";
+          text-align: center;
+        }
+      }
+    }
+  }
+  #more {
+    float: right;
+    padding: 6px 10px;
+    background-color: $blue;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+    margin-right: 70px;
+    // float: none;
+  }
+}
+/*----End Call Rise----*/
+
+/*----Link Rise----*/
+#link-rise {
+  position: relative;
+  font-family: "Myriad";
+  .link-rise-bg {
+    img {
+      width: 100%;
+    }
+  }
+  .link-content {
+    position: absolute;
+    top: 0;
+    // padding-bottom: 30px;
+    padding-top: 50px;
+    .group {
+      display: flex;
+      padding-left: 90px;
+      margin-bottom: 30px;
+      .input-group-text {
+        position: relative;
+        background-color: $blue;
+        color: white;
+        font-size: 24px;
+        padding-right: 40px;
+        border-radius: 25px 0 0 25px;
+        // margin: 20px 0;
+      }
+      .form-control {
+        position: relative;
+        font-size: 24px;
+        border-radius: 20px 0 0 20px;
+      }
+      .form-control::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 105%;
+        border: none;
+        right: -1%;
+        border-radius: 50% 0 0 50%;
+        background-color: #000;
+      }
+      .input-group-text::before {
+        position: absolute;
+        content: " ";
+        width: 30px;
+        height: 104%;
+        border: none;
+        background-color: white;
+        right: -1%;
+        border-radius: 50% 0 0 50%;
+      }
+      a {
+        // margin-left: 40px;
+        // margin: auto 40px;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+/*----End Link Rise----*/
+
+// End Goi Tu Thien Page
+
+// Gioi thieu chung Page
+
+/*----Gioi thieu chung----*/
+#gioi-thieu-chung {
+  font-family: "Myriad";
+  padding: 30px 0 50px 0;
+  margin: 0 180px;
+  h4 {
+    font-family: "Open";
+    text-align: center;
+    color: $green;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  p {
+    text-indent: 30px;
+    font-size: 20px;
+  }
+}
+/*----End Gioi thieu chung----*/
+
+// End Gioi thieu chung page
+
+// Hay tham gia Page
+/*----Hay tham gia----*/
+
+#hay-tham-gia {
+  margin-bottom: 50px;
+  font-family: "NeoRegu";
+  .text {
+    text-align: center;
+    padding: 40px 150px 80px;
+    h4 {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  .content-items {
+    padding: 0 50px;
+    img {
+      width: 60%;
+    }
+    .item {
+      text-align: center;
+      border-right: 1px solid $text-footer;
+      h5 {
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-family: "NeoBold";
+      }
+      p {
+        font-size: 15px;
+      }
+      .tablet {
+        display: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 10px;
+        background-color: $blue;
+        font-size: 14px;
+      }
+    }
+    .trao-doi {
+      border: none;
+    }
+  }
+  .registry {
+    text-align: center;
+    a {
+      text-transform: uppercase;
+      color: white;
+      padding: 4px 18px;
+      border-radius: 10px;
+      background-color: $blue;
+      font-size: 14px;
+    }
+  }
+}
+
+/*----End Hay tham gia----*/
+
+/*----Tro thanh nguoi tai tro----*/
+
+#become {
+  font-family: "NeoRegu";
+  background-color: $bg-grey;
+  .become-title {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 20%;
+      left: 28%;
+      width: 7%;
+    }
+    h4 {
+      font-family: "NeoBold";
+      font-size: 26px;
+      font-weight: bold;
+      color: #648fbf;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 20px;
+      margin: 0 445px;
+      line-height: 25px;
+      font-weight: 600;
+    }
+  }
+  .become-list-item {
+    padding: 30px 80px 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .item {
+    position: relative;
+    img {
+      width: 110%;
+    }
+    #bg-1 {
+      width: 90%;
+      float: right;
+      margin-right: -15px;
+    }
+    .item-content {
+      color: white;
+      position: absolute;
+      left: 30%;
+      top: 0;
+      transform: translate(-20px);
+      text-align: center;
+      h4 {
+        transform: translateX(-10px);
+        font-size: 50px;
+        margin: 10px 0;
+        font-family: "Myriad";
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 2%;
+      left: 52%;
+      transform: translateX(-50%);
+      color: black;
+      background-color: $bg-grey;
+      padding: 4px 8px;
+      border-radius: 10px;
+      font-family: "Myriad";
+      font-size: 14px;
+      text-align: center;
+      width: 100px;
+    }
+    #login {
+      padding: 4px 16px;
+    }
+  }
+}
+
+/*----End Tro thanh nguoi tai tro----*/
+
+/*----Tro thanh nguoi nhan----*/
+
+#receiver {
+  margin: 40px 0;
+  .title {
+    margin-bottom: 40px;
+    font-family: "NeoRegu";
+    text-align: center;
+    img {
+      width: 15%;
+    }
+    h4 {
+      color: $green;
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .receiver-content {
+    font-family: "Myriad";
+  }
+  .receiver-item {
+    padding: 0;
+    display: flex;
+    span {
+      font-size: 110px;
+      line-height: 70%;
+      font-family: "MyriadBold";
+      color: $green;
+    }
+
+    .text-item-1 {
+      background-color: #fbcc5d;
+    }
+    .text-item-2 {
+      background-color: #fbaf5d;
+    }
+    .text-item-3 {
+      background-color: #ff8041;
+    }
+    .text-item-4 {
+      background-color: #09bdff;
+    }
+    .text-item-5 {
+      background-color: #9ee5ff;
+    }
+    p {
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 10px 10px;
+    }
+    p.text-item-1 {
+      padding: 10px 10px;
+    }
+    a {
+      display: block;
+      border-radius: 5px;
+      text-align: center;
+      color: black;
+      padding: 2px 6px;
+    }
+  }
+  #first-item {
+    margin-left: 8.33%;
+  }
+}
+
+/*----End Tro thanh nguoi nhan----*/
+
+/*---Tai tro truc tiep - Trao doi----*/
+
+#truc-tiep {
+  // padding: 0;
+  position: relative;
+  font-family: "NeoRegu";
+  img {
+    width: 100%;
+  }
+  .content {
+    color: white;
+    position: absolute;
+    width: 80%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title {
+    text-align: center;
+    h4 {
+      text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 20px;
+      padding: 0 15%;
+    }
+  }
+  .item {
+    text-align: center;
+    img {
+      width: 33.33%;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+    a {
+      font-family: "Myriad";
+      font-size: 14px;
+      padding: 6px 30px;
+      background-color: $green;
+      border-radius: 15px;
+      color: white;
+    }
+  }
+}
+#trao-doi {
+  padding-left: 0px;
+  position: relative;
+  .bg {
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    width: 105%;
+    text-align: center;
+    margin: 10px 0;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 33.33%;
+      padding: 30px 0;
+    }
+    h4 {
+      font-family: "NeoBold";
+      font-size: 30px;
+    }
+    p {
+      padding: 0 20%;
+      font-family: "NeoRegu";
+      font-size: 16px;
+    }
+    a {
+      display: inline-block;
+      padding: 6px 30px;
+      background-color: $green;
+      border-radius: 15px;
+      font-size: 14px;
+      color: white;
+    }
+  }
+}
+
+/*---End Tai tro truc tiep - Trao doi----*/
+
+/*----Link----*/
+
+#link-bt {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .link-content {
+    position: absolute;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    top: 55%;
+  }
+  .item {
+    text-align: center;
+    p {
+      font-family: "NeoRegu";
+      font-size: 20px;
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+    span {
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+    a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: $blue;
+      border-radius: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/*----Link----*/
+
+// End Hay tham gia Page
+
+// Cau chuyen cua chung toi Page
+
+#our-story {
+  .banner {
+    img {
+      width: 100%;
+    }
+  }
+  padding: 0 150px 100px 150px;
+  h4 {
+    text-align: center;
+    font-family: "Open";
+    font-size: 35px;
+    font-weight: bold;
+    color: $green;
+    margin: 30px 0;
+  }
+  p {
+    text-indent: 30px;
+    font-family: "Myriad";
+    font-size: 25px;
+  }
+}
+
+// End Cau chuyen cua chung toi Page
+
+// Doi tac Page
+
+#partner-page {
+  text-align: center;
+  padding-bottom: 30px;
+  #loi-ich {
+    padding: 0 150px;
+    background-color: $bg-grey;
+    border-bottom: 1px solid $blue;
+    padding-bottom: 30px;
+  }
+  .item-list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 60%;
+    }
+    .item {
+      width: 33.33%;
+    }
+    .item-title {
+      width: 60%;
+      margin: 0 auto;
+      p {
+        margin-top: 30px;
+        font-family: "NeoBold";
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 120%;
+      }
+    }
+  }
+  .loi-ich {
+    padding-top: 30px;
+    background-color: white;
+  }
+  .loi-ich-item {
+    font-family: "Myriad";
+    display: flex;
+    justify-content: baseline;
+    padding-bottom: 30px;
+    img {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    p {
+      display: inline;
+      margin: auto 0;
+      text-align: left;
+      font-size: 25px;
+      padding-right: 40px;
+    }
+  }
+  #doi-tac-tieu-bieu {
+    p {
+      font-family: "Myriad";
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    .list-partner {
+      margin-top: 50px;
+      .nav {
+        padding: 0 80px;
+        a {
+          padding: 6px 30px;
+          color: $dark-blue;
+          border-radius: 25px;
+          font-family: "NeoBold";
+          font-size: 24px;
+        }
+        a:hover {
+          text-decoration: none;
+          color: white;
+          background-color: $dark-blue;
+        }
+        .active {
+          background-color: $dark-blue;
+          color: white;
+        }
+      }
+      .tab-content {
+        margin: 50px 120px;
+        img {
+          width: 90%;
+        }
+        .item {
+          margin-left: 20%;
+        }
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      // display: none;
+      .owl-prev {
+        position: absolute;
+        top: 35%;
+        left: -12%;
+        outline: none;
+      }
+      .owl-next {
+        position: absolute;
+        top: 35%;
+        right: -10%;
+        outline: none;
+      }
+      span {
+        background: $dark-blue;
+        font-size: 80px;
+        border-bottom: 24px solid $dark-blue;
+        /* box-shadow: 0 0px 0 black; */
+        position: absolute;
+        line-height: 30%;
+      }
+    }
+  }
+}
+// Link keu goi
+
+#link-partner {
+  background-image: url(../images/link-keu-goi-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // height: 300px;
+  padding: 0 80px;
+}
+#loi-moi {
+  padding: 30px 0;
+  img {
+    width: 50%;
+  }
+  h4 {
+    font-family: "NeoBold";
+    font-size: 30px;
+    padding-right: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+  }
+}
+#keu-goi {
+  text-align: right;
+  .dang-ky {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    a {
+      padding: 4px 16px;
+      color: white;
+      background-color: $blue;
+      border-radius: 15px;
+      font-family: "NeoBold";
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    img {
+      width: 5%;
+      left: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .moi-tai-tro {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    p {
+      position: absolute;
+      color: white;
+      top: 50%;
+      right: 15%;
+      transform: translateY(-50%);
+      padding-left: 40%;
+      text-align: center;
+      font-size: 20px;
+      font-family: "NeoBold";
+    }
+    span {
+      text-transform: uppercase;
+    }
+    img {
+      width: 50%;
+    }
+    #img-1 {
+      // margin-left: 25px;
+      margin-right: -70px;
+    }
+    #img-2 {
+      width: 60%;
+    }
+  }
+  .chuong-trinh {
+    display: flex;
+    .ct-item {
+      display: flex;
+      // margin-left: 20%;
+      flex-direction: column;
+      // border: 1px solid #fff;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      img {
+        border-top-left-radius: 15px;
+        width: 90%;
+        border: 1px solid white;
+        border-bottom: none;
+        border-top: none;
+      }
+      .ct-title {
+        margin-bottom: 30px;
+        display: block;
+        margin-left: 10%;
+        text-align: center;
+        background-color: $blue;
+        padding: 10px 0;
+        color: white;
+        border-bottom-right-radius: 15px;
+        font-family: "Caviar";
+        border: 1px solid white;
+        border-top: none;
+      }
+    }
+  }
+}
+//End Link keu goi
+
+// End Doi tac Page
+
+// Contact Page
+
+#main-contact {
+  padding: 40px 80px;
+
+  .content-left {
+    .item {
+      position: relative;
+      img {
+        width: 90%;
+      }
+    }
+    .text {
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      left: 10%;
+      transform: translatey(-50%);
+      img {
+        width: 14%;
+        margin-left: 10px;
+      }
+      p {
+        width: 100%;
+        font-size: 20px;
+        font-family: "NeoRegu";
+        color: white;
+        margin-bottom: 5px;
+        line-height: 100%;
+      }
+    }
+  }
+  .content-right {
+    font-family: "Myriad";
+    text-align: center;
+    h4 {
+      font-size: 36px;
+      color: $green;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      margin-bottom: 15px;
+      border: none;
+      background-color: $light-blue;
+      padding: 16px 0;
+    }
+    textarea {
+      background-color: $light-blue;
+      height: 180px;
+      border: none;
+    }
+    ::placeholder {
+      padding-left: 20px;
+      font-size: 16px;
+    }
+    #send-contact {
+      background-color: $blue;
+      width: 20%;
+      border-radius: 25px;
+      margin: 0 auto;
+      margin-top: 15px;
+      display: inline-block;
+      color: white;
+      padding: 6px 20px;
+      font-size: 20px;
+    }
+  }
+}
+//End  Contact Page
+
+// Tin Tuc Page
+
+#news-main-1 {
+  background-color: white;
+  padding: 20px 60px;
+  display: flex;
+  .nav-tabs {
+    font-family: "Myriad";
+    flex-direction: column;
+    width: 25%;
+    border: none;
+    margin-right: 30px;
+    li {
+      background-color: $pink;
+      margin-bottom: 5px;
+      a {
+        display: block;
+        color: white;
+        font-size: 24px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      #search-icon {
+        padding: 0;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .search-bar {
+    background-color: $pink;
+    border: 3px solid $pink;
+    display: flex;
+    justify-content: space-between;
+    input {
+      padding: 5px;
+      width: 80%;
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .tab-content {
+    width: 100%;
+    font-family: "Myriad";
+    color: white;
+
+    .title {
+      display: flex;
+      padding-left: 40px;
+      background-color: $dark-pink;
+      h4 {
+        margin-bottom: 0;
+        margin: auto 20px;
+        text-transform: uppercase;
+        font-family: "NeoRegu";
+      }
+    }
+    .item {
+      display: flex;
+      // margin-bottom: 30px;
+      margin-top: 20px;
+      .news-image {
+        width: 30%;
+        img {
+          width: 80%;
+        }
+      }
+      .news-link {
+        width: 70%;
+        h4 {
+          color: $darker-pink;
+          margin-bottom: -5px;
+        }
+        p {
+          color: black;
+        }
+        span {
+          color: $text-footer;
+        }
+        a {
+          padding: 6px 20px;
+          background-color: $blue;
+          color: white;
+          border-radius: 25px;
+          // margin-left: 80%;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+#news-main-2 {
+  margin-left: 60px;
+  margin-right: 60px;
+  color: white;
+  font-family: "Myriad";
+  .title {
+    display: flex;
+    background-color: $dark-pink;
+    justify-content: center;
+    padding: 10px 0;
+    h4 {
+      margin: auto 0;
+      text-transform: uppercase;
+      padding-left: 30px;
+    }
+    img {
+      width: 6%;
+    }
+  }
+  .content-carousel {
+    color: white;
+    margin: 20px 0;
+    padding: 40px 30px;
+    background-color: $darker-pink;
+    border-radius: 15px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    // margin-right: 10px;
+    .news-image-2 {
+      width: 100%;
+      border-top-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: -3px;
+      text-transform: uppercase;
+    }
+    span {
+      color: $text-footer;
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    a {
+      width: 40%;
+      color: white;
+      padding: 6px 20px;
+      border-radius: 25px;
+      font-family: "Caviar";
+      background-color: $blue;
+      font-size: 16px;
+      margin-left: 60%;
+      img {
+        width: 25%;
+        display: inline-block;
+      }
+    }
+  }
+  .owl-dots {
+    display: none;
+  }
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    color: white;
+    outline: none;
+  }
+  .owl-prev:hover,
+  .owl-next:hover {
+    background-color: transparent;
+  }
+  .owl-next {
+    top: 30%;
+    right: -3%;
+    font-size: 70px;
+  }
+
+  .owl-prev {
+    top: 30%;
+    left: -3%;
+    font-size: 70px;
+  }
+}
+
+#cac-goi-tu-thien {
+  background-color: $dark-pink;
+  font-family: "Myriad";
+  margin: 40px 60px;
+  .title {
+    padding: 10px 0;
+    display: flex;
+    img {
+      margin: 0 30px;
+    }
+    h4 {
+      margin: auto 0;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+  .selected {
+    position: relative;
+    display: flex;
+    select {
+      width: 95%;
+      margin: 15px 0;
+      color: $text-footer;
+      padding: 0 10px;
+      border: none;
+    }
+    img {
+      position: absolute;
+      top: 40%;
+      right: 7%;
+      width: 4%;
+    }
+  }
+}
+
+#in-the-media {
+  margin: 0 60px;
+  margin-bottom: 40px;
+  .title {
+    background-image: url(../images/in-the-media-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 74px;
+    font-family: "Myriad";
+    display: flex;
+    margin-bottom: 60px;
+    h4 {
+      color: white;
+      padding-left: 20%;
+      margin: auto 0;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+  .content-carousel {
+    margin-left: 80px;
+  }
+  .item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $dark-pink;
+    img {
+      width: 45%;
+      margin-top: 10px;
+    }
+    h4 {
+      color: $dark-pink;
+      font-size: 18px;
+      margin-top: 8px;
+      margin-bottom: 3px;
+    }
+    span {
+      color: $text-footer;
+      font-size: 14px;
+    }
+    a {
+      padding: 6px 20px;
+      background-color: $blue;
+      width: 120px;
+      border-radius: 25px;
+      margin-top: 30px;
+      color: white;
+    }
+  }
+  .owl-dots {
+    display: none;
+  }
+  .owl-next,
+  .owl-prev {
+    position: absolute;
+    font-size: 70px;
+    outline: none;
+  }
+  .owl-prev:hover,
+  .owl-next:hover {
+    background-color: transparent;
+    color: black;
+  }
+  .owl-next {
+    top: 0%;
+    right: 0%;
+  }
+  .owl-prev {
+    top: 0%;
+    left: calc(0% - 80px);
+  }
+}
+//End Tin Tuc Page
+
+// Trao tu thien page + Nhan tu thien page
+
+.main {
+  background-color: $bg-dark-grey;
+  padding: 40px 150px;
+}
+#form-trao,
+#form-nhan {
+  border-radius: 25px;
+  position: relative;
+  background-color: #fff;
+  .row {
+    position: relative;
+    .require {
+      position: absolute;
+      right: 0;
+      color: red;
+    }
+  }
+  .title,
+  .footer-form {
+    img {
+      position: absolute;
+      width: 100%;
+    }
+    #header-form-bg {
+      top: 30px;
+      left: 47px;
+    }
+    #footer-form-bg {
+      bottom: 30px;
+      left: -47px;
+    }
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: white;
+      top: 40px;
+    }
+    h1,
+    h4,
+    a {
+      position: absolute;
+      text-transform: uppercase;
+    }
+    h4 {
+      bottom: 50px;
+      left: 30px;
+      color: white;
+      font-size: 24px;
+    }
+    a {
+      display: block;
+      bottom: 50px;
+      right: 80px;
+      color: black;
+      background-color: white;
+      text-decoration: none;
+      padding: 8px 30px;
+      border-radius: 15px;
+      font-family: "Open";
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .content-form {
+    font-family: "NeoRegu";
+    padding-top: 200px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 120px;
+  }
+
+  .form-item {
+    margin-bottom: 30px;
+  }
+  .text {
+    width: 85%;
+    padding: 10px 30px;
+    position: relative;
+    font-size: 20px;
+  }
+  #text-1,
+  #text-4,
+  #text-10,
+  #text-13,
+  #text-14,
+  #text-16,
+  #text-17 {
+    background-color: $form-1;
+  }
+  #text-1::after,
+  #text-4::after,
+  #text-10::after,
+  #text-13::after,
+  #text-14::after,
+  #text-16::after,
+  #text-17::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid $form-1;
+  }
+  #text-2,
+  #text-5,
+  #text-8,
+  #text-11,
+  #text-15 {
+    background-color: $form-2;
+  }
+  #text-2::after,
+  #text-5::after,
+  #text-8::after,
+  #text-15::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid $form-2;
+  }
+  #text-11::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid $form-2;
+  }
+  #text-3,
+  #text-6,
+  #text-7,
+  #text-9,
+  #text-12,
+  #text-18 {
+    background-color: $form-3;
+  }
+  #text-3::after,
+  #text-6::after,
+  #text-7::after,
+  #text-9::after,
+  #text-12::after,
+  #text-18::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid $form-3;
+  }
+  .option {
+    select {
+      width: 100%;
+      padding: 10px 0;
+      border: none;
+      background-color: $bg-grey;
+      margin-bottom: 30px;
+      color: $text-footer;
+    }
+    .option-1 {
+      padding-left: 20px;
+    }
+    [type*="text"] {
+      width: 100%;
+      border: none;
+      background-color: $bg-grey;
+      padding: 10px 0;
+    }
+    [type*="checkbox"] {
+      transform: scale(2);
+      margin-left: 8px;
+    }
+    .checkbox-1 {
+      margin-bottom: 20px;
+    }
+    #upload-file {
+      font-size: 14px;
+      display: block;
+      color: black;
+      text-decoration: none;
+      float: right;
+      text-align: right;
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+#form-nhan {
+  #text-11-2 {
+    background-color: $form-2;
+  }
+  #text-11-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 20px solid $form-2;
+  }
+}
+
+// End Trao tu thien page + Nhan tu thien page

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/responsive.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- ----Header--- -->
+
+      <div id="header">
+          <div class="row">
+            <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+              <img src="images/logo-header.png" alt="logo" />
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-8">
+              <h4>Trao yêu thương từ trái tim!</h4>
+            </div>
+            <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
+              <input type="text" value="" placeholder="Tìm kiếm" />
+              <a id="search" class="mr-2">
+                <img src="images/search-icon.png" alt="search-icon" />
+              </a>
+              <a class = "mr-2" href="">Login</a>
+              <a id="language">
+                <img src="images/vn-icon.png" alt="vn-icon" />
+              </a>
+            </div>
+          </div>
+          <ul id="nav-header">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a class="active-tab" href="hay-tham-gia.html">Hãy tham gia</a></li>
+            <li><a href="partner.html">Đối tác</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+          <div id="nav-header-collapse">
+            <nav class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse"
+                aria-controls="collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </nav>
+            <div class="collapse" id="collapse">
+              <ul id="nav-collapse">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a class="active-tab" href="hay-tham-gia.html">Hãy tham gia</a></li>
+                <li><a href="partner.html">Đối tác</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!-- ----End Header---- -->
+
+      <!-- Banner -->
+      <div id="banner">
+        <img src="images/hay-tham-gia-banner.jpg" alt="banner" />
+      </div>
+      <!--End Banner -->
+
+      <!-- Hay tham gia -->
+      <div id="hay-tham-gia">
+        <div class="text">
+          <h4>Hãy tham gia</h4>
+          <p>
+            Tạo phong cách tận tâm và giá trị vượt trội cho Quá trình Trao -
+            Nhận từ thiện. Chia sẻ yêu thương và khơi gợi tinh thần “dám cho đi”
+            của tất cả chúng ta. Mang trái tim con người ở khắp nơi trên thế
+            giới về bên nhau gần nhất có thể!
+          </p>
+        </div>
+        <div class="content-items">
+          <div class="row ">
+            <div class="item col-lg-3 col-md-3 col-sm-6">
+              <img src="images/nguoi-tai-tro-icon.png" alt="nguoi-tai-tro" />
+              <h5>người tài trợ</h5>
+              <p>
+                Hãy lan tỏa, hãy san sẻ hạnh phúc, tình yêu và tấm lòng của mình
+                tới những người thật sự đang cần giúp đỡ
+              </p>
+              <a href="dang-ky-trao.html" class="tablet">Đăng ký</a>
+            </div>
+            <div id="content-item-2" class="item col-lg-3 col-md-3 col-sm-6">
+              <img src="images/nguoi-tai-tro-icon.png" alt="nguoi-tai-tro" />
+              <h5>người nhận tài trợ</h5>
+              <p>
+                Cá nhân, gia đình, tổ chức đang cần được giúp đỡ giờ.
+              </p>
+              <a href="dang-ky-nhan.html" class="tablet">Đăng ký</a>
+            </div>
+            <div class="item col-lg-3 col-md-3 col-sm-6">
+              <img src="images/nguoi-tai-tro-icon.png" alt="nguoi-tai-tro" />
+              <h5>Tài trợ trực tiếp</h5>
+              <p>
+                Bạn có thể đóng góp trực tiếp đến Nhịp cầu từ thiện ngay bây
+                giờ.
+              </p>
+              <a href="#" class="tablet">Đăng ký</a>
+            </div>
+            <div id="content-item-4" class="item col-lg-3 col-md-3 col-sm-6 trao-doi">
+              <img src="images/nguoi-tai-tro-icon.png" alt="nguoi-tai-tro" />
+              <h5>Chỉ muốn trao đổi</h5>
+              <p>
+                Bạn chia sẻ điều quan tâm và lời nhắn nhủ đến Nhịp cầu từ thiện.
+              </p>
+              <a href="#" class="tablet">Đăng ký</a>
+            </div>
+          </div>
+          <div class="row registry">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <a href="dang-ky-trao.html">Đăng ký</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <a href="dang-ky-nhan.html">Đăng ký</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <a href="dang-ky-trao.html">Đăng ký</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <a href="dang-ky-trao.html">Đăng ký</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- End Hay tham gia -->
+
+      <!-- Tro thanh nguoi tai tro -->
+      <div id="become">
+        <div class="become-title">
+          <img src="images/become-icon.png" alt="become-icon" />
+          <h4>Trở thành người tài trợ</h4>
+          <p>Hãy cho đi để nhận lại hạnh phúc cho mình</p>
+        </div>
+        <div class="become-list-item">
+          <div class="item">
+            <div class="bg">
+              <img id="bg-1" src="images/become-1.png" alt="1" />
+            </div>
+            <div class="item-content item-content-1">
+              <h4>1</h4>
+              <p>Điền thông tin đăng ký để tạo tài khoản Người tài trợ</p>
+            </div>
+            <a class="item-link-1" href="dang-ky-trao.html">Đăng ký</a>
+          </div>
+          <div class="item">
+            <div class="bg">
+              <img src="images/become-2.png" alt="2" />
+            </div>
+            <div class="item-content">
+              <h4>2</h4>
+              <p>Nhấn nút đăng ký và chờ xác nhận của chúng tôi</p>
+            </div>
+            <a href="dang-ky-trao.html">Đăng ký</a>
+          </div>
+          <div class="item">
+            <div class="bg">
+              <img src="images/become-3.png" alt="3" />
+            </div>
+            <div class="item-content">
+              <h4>3</h4>
+              <p>Nhận mail xác nhận và tài khoản Người tài trợ</p>
+            </div>
+            <a href="dang-ky-trao.html">Đăng ký</a>
+          </div>
+          <div class="item">
+            <div class="bg">
+              <img src="images/become-4.png" alt="4" />
+            </div>
+            <div class="item-content">
+              <h4>4</h4>
+              <p>Đăng nhập và tạo các Gói tài trợ của mình</p>
+            </div>
+            <a id="login" href="#">Đăng nhập</a>
+          </div>
+          <div class="item">
+            <div class="bg">
+              <img src="images/become-5.png" alt="5" />
+            </div>
+            <div class="item-content">
+              <h4>5</h4>
+              <p>Quản lý các Gói tài trợ của bạn đã tạo</p>
+            </div>
+            <a id="login" href="#">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <!---End Tro thanh nguoi tai tro -->
+
+      <!-- Nhan tai tro -->
+
+      <div id="receiver">
+        <div class="title">
+          <img src="images/receive-icon.png" alt="receiver" />
+          <h4>Trở thành người nhận tài trợ</h4>
+          <p>Hãy cho chúng tôi cơ hội được chia sẻ khó khăn cùng bạn</p>
+        </div>
+        <div class="receiver-content">
+          <div class="row">
+            <div id="first-item" class="receiver-item col-lg-2 col-md-4 ">
+              <span>1</span>
+              <div class="text">
+                <p class="text-item-1">
+                  Điền thông tin đăng ký để tạo tài khoản Người nhận tài trợ
+                </p>
+                <a class="text-item-1" href="dang-ky-nhan.html">Đăng ký</a>
+              </div>
+            </div>
+            <div class="receiver-item col-lg-2 col-md-4 ">
+              <span>2</span>
+              <div class="text">
+                <p class="text-item-2">
+                  Nhấn nút đăng ký và chờ xác nhận của chúng tôi
+                </p>
+                <a class="text-item-2" href="#">Đăng ký</a>
+              </div>
+            </div>
+            <div class="receiver-item col-lg-2 col-md-4 ">
+              <span>3</span>
+              <div class="text">
+                <p class="text-item-3">
+                  Nhận mail xác nhận và tài khoản Người nhận tài trợ
+                </p>
+                <a class="text-item-3" href="#">Đăng ký</a>
+              </div>
+            </div>
+            <div class="receiver-item col-lg-2 col-md-4  ">
+              <span>4</span>
+              <div class="text">
+                <p class="text-item-4">
+                  Đăng nhập và tạo các Gói nhận tài trợ của mình
+                </p>
+                <a class="text-item-4" href="#">Đăng ký</a>
+              </div>
+            </div>
+            <div id="item-5" class="receiver-item col-lg-2 col-md-4 ">
+              <span>5</span>
+              <div class="text">
+                <p class="text-item-5">
+                  Quản lý theo dõi các Gói nhận tài trợ đã tạo
+                </p>
+                <a class="text-item-5" href="#">Đăng ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Nhan tai tro -->
+
+      <!-- Tai tro truc tiep - Trao doi -->
+
+      <div id="tai-tro">
+        <div class="row">
+          <div id="truc-tiep" class="col-lg-8 col-md-8">
+            <div class="bg">
+              <img src="images/truc-tiep-img.jpg" alt="truc-tiep" />
+            </div>
+            <div class="content">
+              <div class="title">
+                <h4>tài trợ trực tiếp cho chúng tôi</h4>
+                <p>
+                  Sự giúp đỡ kịp thời của bạn luôn mang lại giá trị đáng ghi
+                  nhận
+                </p>
+              </div>
+              <div class="list-item">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <img src="images/stick-icon.png" alt="stick" />
+                    <p>
+                      Bạn chỉ muốn ủng hộ, bạn có thể tìm nơi nhận tài trợ trực
+                      tiếp của chúng tôi ở đây
+                    </p>
+                    <a href="#">Liên hệ</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <img src="images/stick-icon.png" alt="stick" />
+                    <p>
+                      Bạn chỉ muốn ủng hộ, bạn có thể tìm nơi nhận tài trợ trực
+                      tiếp của chúng tôi ở đây
+                    </p>
+                    <a href="#">Liên hệ</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <img src="images/stick-icon.png" alt="stick" />
+                    <p>
+                      Bạn chỉ muốn ủng hộ, bạn có thể tìm nơi nhận tài trợ trực
+                      tiếp của chúng tôi ở đây
+                    </p>
+                    <a href="#">Liên hệ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="trao-doi" class="col-lg-4 col-md-4">
+            <div class="bg">
+              <img src="images/trao-doi-bg.jpg" alt="trao-doi" />
+            </div>
+            <div class="content">
+              <h4>Chỉ muốn trao đổi</h4>
+              <p>Hãy gửi cho chúng tôi tâm tư của ban</p>
+              <img src="images/load-icon.png" alt="load" />
+              <a href="#">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Tai tro truc tiep - Trao doi -->
+
+      <div id="link-bt">
+        <div class="bg">
+          <img src="images/link-bg.jpg" alt="link-bg" />
+        </div>
+        <div class="link-content">
+          <div class="item">
+            <p>
+              Bạn là <span> Người tài trợ </span> hãy tạo
+              <span> Gói tài trợ </span>
+            </p>
+            <a href="#">Tham Gia</a>
+          </div>
+          <div class="item">
+            <p>
+              Bạn là <span> Người tài trợ </span> hãy tạo
+              <span> Gói tài trợ </span>
+            </p>
+            <a href="#">Tham Gia</a>
+          </div>
+        </div>
+      </div>
+
+      <!------Footer---- -->
+
+      <div id="footer">
+          <div class="row">
+            <div class="img-footer col-lg-5 col-md-5 col-sm-6">
+              <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
+            </div>
+            <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
+              <h4>LIÊN HỆ</h4>
+              <p>
+                Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
+                Thành phố Hà Nội.
+              </p>
+              <p>Email: NCTT@gmail.com;</p>
+              <p>Fanpage:</p>
+              <p>Website:</p>
+              <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
+              <div class="social">
+                <a href="#"
+                  ><img class="social-item" src="images/fb-icon.png" alt="fb"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/mail-icon.png" alt="mail"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/mess-icon.png" alt="mess"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/zalo-icon.png" alt="zalo"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/bank-icon.png" alt="bank"
+                /></a>
+              </div>
+            </div>
+            <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+              <a href="index.html">Trang chủ</a>
+              <a href="about.html">Về chúng tôi</a>
+              <a href="hay-tham-gia.html">Hãy tham gia</a>
+              <a href="partner.html">Đối tác</a>
+              <a href="news.html">Tin tức</a>
+              <a href="goi-tu-thien.html">Gói từ thiện</a>
+              <a href="contact.html">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      <!------End Footer------>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
