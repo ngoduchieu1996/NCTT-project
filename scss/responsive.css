@@ -47,7 +47,34 @@
   #goi-tu-thien .nhan-tu-thien i {
     font-size: 24px;
   }
+  #field .field-item .text-item,
+  #goi-tu-thien .field-item .text-item {
+    font-size: 14px;
+  }
+  #field .goi-tu-thien-text .inner-text,
+  #goi-tu-thien .goi-tu-thien-text .inner-text {
+    font-size: 14px;
+    top: 40px;
+  }
   /*----End Field----*/
+  /*----Link-rise----*/
+  #link-rise .link-content {
+    padding: 20px 30px;
+  }
+  #link-rise .link-item {
+    margin-bottom: 10px;
+  }
+  #link-rise .link-item .link-title {
+    font-size: 20px;
+  }
+  #link-rise .link-item img {
+    width: 60%;
+  }
+  #link-rise .link-item input {
+    padding: 15px;
+    width: 250px;
+  }
+  /*----End Link-rise----*/
   /*----News-1----*/
   #news-1 #more {
     font-size: 14px;
@@ -632,6 +659,37 @@
   #goi-tu-thien .nhan-tu-thien i {
     font-size: 20px;
   }
+  #field .field-item,
+  #goi-tu-thien .field-item {
+    padding: 5px;
+  }
+  #field .field-item .text-item,
+  #goi-tu-thien .field-item .text-item {
+    font-size: 13px;
+  }
+  #field .goi-tu-thien-text .inner-text,
+  #goi-tu-thien .goi-tu-thien-text .inner-text {
+    font-size: 12px;
+    top: 20px;
+  }
+  /*----Link-rise----*/
+  #link-rise .link-content {
+    padding: 10px;
+  }
+  #link-rise .link-item {
+    margin-bottom: 10px;
+  }
+  #link-rise .link-item .link-title {
+    font-size: 16px;
+  }
+  #link-rise .link-item img {
+    width: 47%;
+  }
+  #link-rise .link-item input {
+    padding: 10px;
+    width: 170px;
+  }
+  /*----End Link-rise----*/
   /*----New-1----*/
   #news-1 .news-content .news-item-right {
     display: none;
@@ -1384,9 +1442,18 @@
   }
   /*----End Gioi thieu chung Page---*/
   /*----Goi tu thien Page----*/
-  #field .nhan-tu-thien,
-  #goi-tu-thien .nhan-tu-thien {
+  #field .nhan-tu-thien, #goi-tu-thien .nhan-tu-thien {
     font-size: 14px;
+  }
+  #field .field-item .text-item, #goi-tu-thien .field-item .text-item {
+    font-size: 10px;
+  }
+  #field .goi-tu-thien-text img, #goi-tu-thien .goi-tu-thien-text img {
+    width: 120%;
+  }
+  #field .goi-tu-thien-text .inner-text, #goi-tu-thien .goi-tu-thien-text .inner-text {
+    width: 100%;
+    font-size: 11px;
   }
   #call-rise #call-icon {
     width: 13%;
@@ -1400,6 +1467,35 @@
   }
   #call-rise #more {
     width: 22%;
+  }
+  #link-rise .link-content {
+    padding: 5px;
+  }
+  #link-rise .link-item {
+    margin-bottom: 5px;
+  }
+  #link-rise .link-item .link-title {
+    font-size: 12px;
+    padding: 8px 30px;
+  }
+  #link-rise .link-item img {
+    width: 40%;
+  }
+  #link-rise .link-item input {
+    padding: 5px;
+    width: 150px;
+  }
+  #link-rise .link-item ::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  #link-rise .link-item :-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #link-rise .link-item ::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #link-rise .link-item ::placeholder {
+    font-size: 14px;
   }
   /*----End Goi tu thien Page----*/
   /*----Hay tham gia Page----*/

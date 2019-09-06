@@ -26,8 +26,8 @@ $form-3: #d4ffd4;
         }
       }
     }
-    #language{
-      img{
+    #language {
+      img {
         width: 100%;
       }
     }
@@ -65,8 +65,40 @@ $form-3: #d4ffd4;
         font-size: 24px;
       }
     }
+    .field-item {
+      .text-item {
+        font-size: 14px;
+      }
+    }
+    .goi-tu-thien-text .inner-text {
+      font-size: 14px;
+      top: 40px;
+    }
   }
   /*----End Field----*/
+
+  /*----Link-rise----*/
+
+  #link-rise {
+    .link-content {
+      padding: 20px 30px;
+    }
+    .link-item {
+      margin-bottom: 10px;
+      .link-title {
+        font-size: 20px;
+      }
+      img {
+        width: 60%;
+      }
+      input {
+        padding: 15px;
+        width: 250px;
+      }
+    }
+  }
+
+  /*----End Link-rise----*/
 
   /*----News-1----*/
   #news-1 {
@@ -631,7 +663,7 @@ $form-3: #d4ffd4;
     img {
       width: 60%;
     }
-    
+
     #header-left {
       display: flex;
       justify-content: center;
@@ -644,7 +676,7 @@ $form-3: #d4ffd4;
         font-size: 16px;
         padding: 2px;
       }
-      #search{
+      #search {
         padding-left: 10px;
       }
     }
@@ -690,8 +722,8 @@ $form-3: #d4ffd4;
         }
       }
     }
-    #language{
-      img{
+    #language {
+      img {
         width: 60%;
       }
     }
@@ -774,7 +806,40 @@ $form-3: #d4ffd4;
         font-size: 20px;
       }
     }
+    .field-item {
+      padding: 5px;
+      .text-item {
+        font-size: 13px;
+      }
+    }
+    .goi-tu-thien-text .inner-text {
+      font-size: 12px;
+      top: 20px;
+    }
   }
+
+  /*----Link-rise----*/
+
+  #link-rise {
+    .link-content {
+      padding: 10px;
+    }
+    .link-item {
+      margin-bottom: 10px;
+      .link-title {
+        font-size: 16px;
+      }
+      img {
+        width: 47%;
+      }
+      input {
+        padding: 10px;
+        width: 170px;
+      }
+    }
+  }
+
+  /*----End Link-rise----*/
 
   /*----New-1----*/
 
@@ -1004,7 +1069,7 @@ $form-3: #d4ffd4;
         width: 90px;
         text-decoration: none;
       }
-      a:hover{
+      a:hover {
         color: white;
         background-color: black;
       }
@@ -1635,9 +1700,24 @@ $form-3: #d4ffd4;
 
   /*----Goi tu thien Page----*/
 
-  #field .nhan-tu-thien,
-  #goi-tu-thien .nhan-tu-thien {
-    font-size: 14px;
+  #field, #goi-tu-thien {
+    .nhan-tu-thien {
+      font-size: 14px;
+    }
+    .field-item {
+      .text-item {
+        font-size: 10px;
+      }
+    }
+    .goi-tu-thien-text{
+      img{
+        width: 120%;
+      }
+      .inner-text{
+        width: 100%;
+        font-size: 11px;
+      }
+    }
   }
   #call-rise {
     #call-icon {
@@ -1660,6 +1740,29 @@ $form-3: #d4ffd4;
     }
     #more {
       width: 22%;
+    }
+  }
+
+  #link-rise {
+    .link-content {
+      padding: 5px;
+    }
+    .link-item {
+      margin-bottom: 5px;
+      .link-title {
+        font-size: 12px;
+        padding: 8px 30px;
+      }
+      img {
+        width: 40%;
+      }
+      input {
+        padding: 5px;
+        width: 150px;
+      }
+      ::placeholder {
+        font-size: 14px;
+      }
     }
   }
 
@@ -1755,28 +1858,28 @@ $form-3: #d4ffd4;
       }
     }
   }
-  #truc-tiep{
-    .title{
-      h4{
+  #truc-tiep {
+    .title {
+      h4 {
         font-size: 20px;
       }
-      p{
+      p {
         font-size: 14px;
       }
     }
-    .item{
-      p{
+    .item {
+      p {
         padding: 0;
         font-size: 12px;
       }
-      img{
+      img {
         width: 25%;
       }
     }
   }
-  #trao-doi{
-    .content{
-      h4{
+  #trao-doi {
+    .content {
+      h4 {
         font-size: 26px;
       }
     }
@@ -1785,8 +1888,8 @@ $form-3: #d4ffd4;
     .link-content {
       padding: 0;
       top: 33%;
-      .item{
-        color:white;
+      .item {
+        color: white;
       }
       p {
         width: 80%;
@@ -1948,22 +2051,22 @@ $form-3: #d4ffd4;
       }
     }
   }
-  #loi-moi{
-    h4{
+  #loi-moi {
+    h4 {
       font-size: 20px;
     }
   }
-  #keu-goi{
-    .dang-ky{
-      a{
+  #keu-goi {
+    .dang-ky {
+      a {
         font-size: 16px;
       }
     }
-    .moi-tai-tro{
-      img{
+    .moi-tai-tro {
+      img {
         width: 65%;
       }
-      p{
+      p {
         padding-left: 50px;
         right: 37%;
       }

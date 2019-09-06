@@ -44,6 +44,16 @@
   src: url(../fonts/UTM-Caviar.ttf);
 }
 
+@font-face {
+  font-family: "Mautim";
+  src: url(../fonts/MauTim2.TTF);
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url(../fonts/KGPrimaryItalics.ttf);
+}
+
 /*----Color----*/
 /*----End Color----*/
 /*----Header---*/
@@ -285,6 +295,24 @@
 #goi-tu-thien .field-item {
   position: absolute;
   width: 15%;
+  padding: 15px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+#field .field-item img,
+#goi-tu-thien .field-item img {
+  width: 100%;
+}
+
+#field .field-item .text-item,
+#goi-tu-thien .field-item .text-item {
+  line-height: 1;
+  font-family: "NeoRegu";
+  font-size: 18px;
+  font-weight: 700;
+  opacity: .8;
+  margin-top: 10px;
 }
 
 #field #field-item-1,
@@ -723,10 +751,25 @@
 
 #goi-tu-thien .goi-tu-thien-text {
   position: absolute;
+  display: none;
   z-index: 2;
-  top: 15%;
-  left: 30%;
+  top: 27%;
+  left: 25%;
   width: 50%;
+}
+
+#goi-tu-thien .goi-tu-thien-text img {
+  width: 100%;
+}
+
+#goi-tu-thien .goi-tu-thien-text .inner-text {
+  position: absolute;
+  font-family: "Primary";
+  font-size: 20px;
+  top: 50px;
+  width: 80%;
+  margin-left: 10%;
+  font-weight: 500;
 }
 
 #goi-tu-thien .nhan-tu-thien {
@@ -830,56 +873,74 @@
 #link-rise .link-content {
   position: absolute;
   top: 0;
-  padding-top: 50px;
+  padding: 30px;
 }
 
-#link-rise .link-content .group {
+#link-rise .link-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-#link-rise .link-content .group .input-group-text {
-  position: relative;
-  background-color: #00afef;
+#link-rise .link-item img {
+  width: 80%;
+}
+
+#link-rise .link-item .link-title {
+  display: inline-block;
+  background-image: url(../images/link-invite-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 30px;
   color: white;
-  font-size: 24px;
-  padding-right: 40px;
-  border-radius: 25px 0 0 25px;
+  text-align: center;
+  margin: auto 0;
+  padding: 12px 60px;
 }
 
-#link-rise .link-content .group .form-control {
-  position: relative;
-  font-size: 24px;
-  border-radius: 20px 0 0 20px;
+#link-rise .link-item .link-title-3 {
+  background-image: url(../images/link-invite-bg-4.png);
 }
 
-#link-rise .link-content .group .form-control::before {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 105%;
+#link-rise .link-item .link-title-2 {
+  background-image: url(../images/link-invite-bg-3.png);
+}
+
+#link-rise .link-item input {
+  background-image: url(../images/link-invite-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   border: none;
-  right: -1%;
-  border-radius: 50% 0 0 50%;
-  background-color: #000;
+  outline: none;
+  margin: auto 0;
+  padding: 20px;
+  width: 360px;
+  background-color: transparent;
 }
 
-#link-rise .link-content .group .input-group-text::before {
-  position: absolute;
-  content: " ";
-  width: 30px;
-  height: 104%;
-  border: none;
-  background-color: white;
-  right: -1%;
-  border-radius: 50% 0 0 50%;
+#link-rise .link-item ::-webkit-input-placeholder {
+  color: #898a8a;
+  font-size: 20px;
+  opacity: .8;
 }
 
-#link-rise .link-content .group a img {
-  width: 50%;
+#link-rise .link-item :-ms-input-placeholder {
+  color: #898a8a;
+  font-size: 20px;
+  opacity: .8;
+}
+
+#link-rise .link-item ::-ms-input-placeholder {
+  color: #898a8a;
+  font-size: 20px;
+  opacity: .8;
+}
+
+#link-rise .link-item ::placeholder {
+  color: #898a8a;
+  font-size: 20px;
+  opacity: .8;
 }
 
 /*----End Link Rise----*/

@@ -35,6 +35,14 @@
   font-family: "Caviar";
   src: url(../fonts/UTM-Caviar.ttf);
 }
+@font-face{
+  font-family: "Mautim";
+  src: url(../fonts/MauTim2.TTF);
+}
+@font-face{
+  font-family: "Primary";
+  src: url(../fonts/KGPrimaryItalics.ttf);
+}
 /*----Color----*/
 
 $green: #00a859;
@@ -255,7 +263,22 @@ $form-3: #d4ffd4;
   .field-item {
     position: absolute;
     width: 15%;
+    padding: 15px;
+    background-color: #ccc;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+    .text-item{
+      line-height: 1;
+      font-family: "NeoRegu";
+      font-size:18px;
+      font-weight: 700;
+      opacity: .8;
+      margin-top: 10px;
+    }
   }
+
   #field-item-1 {
     top: 29%;
     left: 3%;
@@ -629,10 +652,23 @@ $form-3: #d4ffd4;
   }
   .goi-tu-thien-text {
     position: absolute;
+    display: none;
     z-index: 2;
-    top: 15%;
-    left: 30%;
+    top: 27%;
+    left: 25%;
     width: 50%;
+    img{
+      width: 100%;
+    }
+    .inner-text{
+      position: absolute;
+      font-family: "Primary";
+      font-size: 20px;
+      top: 50px;
+      width: 80%;
+      margin-left: 10%;
+      font-weight: 500;
+    }
   }
   .nhan-tu-thien {
     position: absolute;
@@ -725,53 +761,47 @@ $form-3: #d4ffd4;
   .link-content {
     position: absolute;
     top: 0;
-    // padding-bottom: 30px;
-    padding-top: 50px;
-    .group {
-      display: flex;
-      padding-left: 90px;
-      margin-bottom: 30px;
-      .input-group-text {
-        position: relative;
-        background-color: $blue;
-        color: white;
-        font-size: 24px;
-        padding-right: 40px;
-        border-radius: 25px 0 0 25px;
-        // margin: 20px 0;
-      }
-      .form-control {
-        position: relative;
-        font-size: 24px;
-        border-radius: 20px 0 0 20px;
-      }
-      .form-control::before {
-        position: absolute;
-        content: "";
-        width: 30px;
-        height: 105%;
-        border: none;
-        right: -1%;
-        border-radius: 50% 0 0 50%;
-        background-color: #000;
-      }
-      .input-group-text::before {
-        position: absolute;
-        content: " ";
-        width: 30px;
-        height: 104%;
-        border: none;
-        background-color: white;
-        right: -1%;
-        border-radius: 50% 0 0 50%;
-      }
-      a {
-        // margin-left: 40px;
-        // margin: auto 40px;
-        img {
-          width: 50%;
-        }
-      }
+    padding: 30px;
+  }
+  .link-item{
+    display: flex;
+    margin-bottom: 20px;
+    img{
+      width: 80%;
+    }
+    .link-title{
+      display: inline-block;
+      background-image: url(../images/link-invite-bg-1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      margin: auto 0;
+      padding: 12px 60px;
+      // margin-left: 30px;
+    }
+    .link-title-3{
+      background-image: url(../images/link-invite-bg-4.png);
+    }
+    .link-title-2{
+      background-image: url(../images/link-invite-bg-3.png);
+    }
+    input{
+      background-image: url(../images/link-invite-bg-2.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border: none;
+      outline: none;
+      margin: auto 0;
+      padding: 20px;
+      width: 360px;
+      background-color: transparent;
+    }
+    ::placeholder{
+      color: $text-footer;
+      font-size: 20px;
+      opacity: .8;
     }
   }
 }
