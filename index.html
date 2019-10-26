@@ -1,404 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="scss/style.css" />
-    <link rel="stylesheet" href="scss/responsive.css" />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <!-- ----Header--- -->
 
-      <div id="header">
-        <div class="row">
-          <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
-            <img src="images/logo-header.png" alt="logo" />
-          </div>
-          <div class="col-lg-5 col-md-5 col-sm-8">
-            <h4>Trao yêu thương từ trái tim!</h4>
-          </div>
-          <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
-            <input type="text" value="" placeholder="Tìm kiếm" />
-            <a id="search" class="mr-2">
-              <img src="images/search-icon.png" alt="search-icon" />
-            </a>
-            <a class="mr-2" href="">Login</a>
-            <a id="language">
-              <img src="images/vn-icon.png" alt="vn-icon" />
-            </a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="scss/responsive.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- ----Header--- -->
+
+    <div id="header">
+      <div class="row">
+        <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+          <img src="images/logo-header.png" alt="logo" />
         </div>
-        <ul id="nav-header">
-          <li><a class="active-tab" href="index.html">Trang chủ</a></li>
-          <li><a href="about.html">Về chúng tôi</a></li>
-          <li>
-            <a href="hay-tham-gia.html">Hãy tham gia</a>
-          </li>
-          <li><a href="partner.html">Đối tác</a></li>
-          <li><a href="news.html">Tin tức</a></li>
-          <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-        <div id="nav-header-collapse">
-          <nav class="navbar">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapse"
-              aria-controls="collapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-          </nav>
-          <div class="collapse" id="collapse">
-            <ul id="nav-collapse">
-              <li><a class="active-tab" href="index.html">Trang chủ</a></li>
-              <li><a href="about.html">Về chúng tôi</a></li>
-              <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
-              <li><a href="partner.html">Đối tác</a></li>
-              <li><a href="news.html">Tin tức</a></li>
-              <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
-              <li><a href="contact.html">Liên hệ</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-5 col-md-5 col-sm-8">
+          <h4>Trao yêu thương từ trái tim!</h4>
+        </div>
+        <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
+          <input type="text" value="" placeholder="Tìm kiếm" />
+          <a id="search" class="mr-2">
+            <img src="images/search-icon.png" alt="search-icon" />
+          </a>
+          <a class="mr-2" href="">Login</a>
+          <a id="language">
+            <img src="images/vn-icon.png" alt="vn-icon" />
+          </a>
         </div>
       </div>
-      <!-- ----End Header---- -->
-
-      <!-- /*----Banner----*/ -->
-
-      <div id="banner" class="carousel slide" data-ride="carousel">
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/banner.jpg" alt="banner-1" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" alt="banner-2" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" alt="banner-3" />
-          </div>
+      <ul id="nav-header">
+        <li><a class="active-tab" href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li>
+          <a href="hay-tham-gia.html">Hãy tham gia</a>
+        </li>
+        <li><a href="partner.html">Đối tác</a></li>
+        <li><a href="news.html">Tin tức</a></li>
+        <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div id="nav-header-collapse">
+        <nav class="navbar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse"
+            aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <div class="collapse" id="collapse">
+          <ul id="nav-collapse">
+            <li><a class="active-tab" href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
+            <li><a href="partner.html">Đối tác</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#banner" data-slide="prev">
-          <img src="images/Prev-btn.png" alt="prev" />
-        </a>
-        <a class="carousel-control-next" href="#banner" data-slide="next">
-          <img src="images/next-btn.png" alt="next" />
-        </a>
       </div>
-      <!-- ----End Banner--- -->
+    </div>
+    <!-- ----End Header---- -->
 
-      <!-- ----Intro---- -->
+    <!-- /*----Banner----*/ -->
 
-      <div id="intro">
-        <h3>
-          Giới thiệu chung
-        </h3>
-        <p>
-          <span id="span-1">NHỊP CẦU TỪ THIỆN</span> kết nối tấm lòng của rất
-          nhiều người với mong muốn <span>CHO ĐI</span> đến những mảnh đời,
-          những thân phận không may mắn <span>CẦN NHẬN</span> hỗ trợ trong cuộc
-          sống xung quanh chúng ta.
-        </p>
-        <a href="goi-thieu-chung.html">Xem thêm</a>
+    <div id="banner" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner.jpg" alt="banner-1" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.jpg" alt="banner-2" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.jpg" alt="banner-3" />
+        </div>
       </div>
-      <!-- ----End Intro---- -->
 
-      <!-- /*----Registry----*/ -->
-      <div id="registry">
-        <a id="regis-1" href="dang-ky-trao.html">Đăng ký người tài trợ</a>
-        <a id="regis-2" href="dang-ky-nhan.html">Đăng ký người nhận tài trợ</a>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#banner" data-slide="prev">
+        <img src="images/Prev-btn.png" alt="prev" />
+      </a>
+      <a class="carousel-control-next" href="#banner" data-slide="next">
+        <img src="images/next-btn.png" alt="next" />
+      </a>
+    </div>
+    <!-- ----End Banner--- -->
+
+    <!-- ----Intro---- -->
+
+    <div id="intro">
+      <h3>
+        Giới thiệu chung
+      </h3>
+      <p>
+        <span id="span-1">NHỊP CẦU TỪ THIỆN</span> kết nối tấm lòng của rất
+        nhiều người với mong muốn <span>CHO ĐI</span> đến những mảnh đời,
+        những thân phận không may mắn <span>CẦN NHẬN</span> hỗ trợ trong cuộc
+        sống xung quanh chúng ta.
+      </p>
+      <a href="goi-thieu-chung.html">Xem thêm</a>
+    </div>
+    <!-- ----End Intro---- -->
+
+    <!-- /*----Registry----*/ -->
+    <div id="registry">
+      <a id="regis-1" href="dang-ky-trao.html">Đăng ký người tài trợ</a>
+      <a id="regis-2" href="dang-ky-nhan.html">Đăng ký người nhận tài trợ</a>
+    </div>
+    <!------End Registry---- -->
+
+    <!-- ----Field------>
+
+    <div id="field">
+      <div class="field-background">
+        <img src="images/linh-vuc-bg.jpg" alt="bg" />
       </div>
-      <!------End Registry---- -->
-
-      <!-- ----Field------>
-
-      <div id="field">
-        <div class="field-background">
-          <img src="images/linh-vuc-bg.jpg" alt="bg" />
+      <p>các đối tượng nhận từ thiện</p>
+      <div id="field-item-1" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-1.png" alt="demo">
         </div>
-        <p>các đối tượng nhận từ thiện</p>
-        <div  id="field-item-1" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-1.png" alt="demo">
-          </div>
-          <div class="text-item">Vùng bị thiên tai nạn dịch</div>
-        </div>
-        <div  id="field-item-2" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-2-4.png" alt="demo">
-          </div>
-          <div class="text-item">Nhóm người cần hỗ trợ</div>
-        </div>
-        <div  id="field-item-3" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-3-5.png" alt="demo">
-          </div>
-          <div class="text-item">Trẻ em/Cá nhân cần bảo trợ</div>
-        </div>
-        <div  id="field-item-4" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-2-4.png" alt="demo">
-          </div>
-          <div class="text-item">Tổ chức cần giúp đỡ</div>
-        </div>
-        <div  id="field-item-5" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-3-5.png" alt="demo">
-          </div>
-          <div class="text-item">Quỹ từ thiện/Tổ chức hoạt động từ thiện</div>
-        </div>
-        <div  id="field-item-6" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-6-7.png" alt="demo">
-          </div>
-          <div class="text-item">Cá nhân gặp khó khăn</div>
-        </div>
-        <div  id="field-item-7" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-6-7.png" alt="demo">
-          </div>
-          <div class="text-item">Các bên khác</div>
-        </div>
-        <div  id="field-item-8" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-1.png" alt="demo">
-          </div>
-          <div class="text-item">Gia đình/Nhóm người ruột thịt</div>
-        </div>
-        
+        <div class="text-item">Vùng bị thiên tai nạn dịch</div>
       </div>
-      <!------End Field------>
-
-      <!------New-1------>
-
-      <div id="news-1">
-        <div id="news-background">
-          <img src="images/news-bg.jpg" alt="news-bg" />
+      <div id="field-item-2" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-2-4.png" alt="demo">
         </div>
-        <div class="row news-content">
-          <div class="col-lg-7 col-md-7 col-sm-12 news-item-left">
-            <div class="row ">
-              <div class="col-lg-5 col-md-5 col-sm-3"></div>
-              <div class="news-item col-lg-7 col-md-7 col-sm-9">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-6">
-                    <img src="images/news-1.jpg" alt="news-1" />
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-6">
-                    <a href="#">
-                      <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
-                    </a>
-                    <span class="date">10/05/2017 07:57</span>
-                    <p>
-                      Một mình ôm con trong bệnh viện, chị đau thắt lòng khi
-                      thấy con suốt ngày quấy khóc bởi khối u to căng mọng trên
-                      mặt chỉ chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành
-                      hạ...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-5 news-item-right">
-            <div class="news-item ">
+        <div class="text-item">Nhóm người cần hỗ trợ</div>
+      </div>
+      <div id="field-item-3" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-3-5.png" alt="demo">
+        </div>
+        <div class="text-item">Trẻ em/Cá nhân cần bảo trợ</div>
+      </div>
+      <div id="field-item-4" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-2-4.png" alt="demo">
+        </div>
+        <div class="text-item">Tổ chức cần giúp đỡ</div>
+      </div>
+      <div id="field-item-5" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-3-5.png" alt="demo">
+        </div>
+        <div class="text-item">Quỹ từ thiện/Tổ chức hoạt động từ thiện</div>
+      </div>
+      <div id="field-item-6" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-6-7.png" alt="demo">
+        </div>
+        <div class="text-item">Cá nhân gặp khó khăn</div>
+      </div>
+      <div id="field-item-7" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-6-7.png" alt="demo">
+        </div>
+        <div class="text-item">Các bên khác</div>
+      </div>
+      <div id="field-item-8" class="field-item">
+        <div class="img-item">
+          <img src="images/linh-vuc-1.png" alt="demo">
+        </div>
+        <div class="text-item">Gia đình/Nhóm người ruột thịt</div>
+      </div>
+
+    </div>
+    <!------End Field------>
+
+    <!------New-1------>
+
+    <div id="news-1">
+      <div id="news-background">
+        <img src="images/news-bg.jpg" alt="news-bg" />
+      </div>
+      <div class="row news-content">
+        <div class="col-lg-7 col-md-7 col-sm-12 news-item-left">
+          <div class="row ">
+            <div class="col-lg-5 col-md-5 col-sm-3"></div>
+            <div class="news-item col-lg-7 col-md-7 col-sm-9">
               <div class="row">
-                <div class="col-lg-6  ">
-                  <img src="images/news-2.jpg" alt="news-2" />
+                <div class="col-lg-12 col-md-12 col-sm-6">
+                  <img src="images/news-1.jpg" alt="news-1" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12 col-md-12 col-sm-6">
                   <a href="#">
                     <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
                   </a>
                   <span class="date">10/05/2017 07:57</span>
                   <p>
-                    Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
-                    con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
-                    chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="right-2" class="news-item mt-5">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img src="images/news-3.jpg" alt="news-2" />
-                </div>
-                <div class="col-lg-6">
-                  <a href="#">
-                    <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
-                  </a>
-                  <span class="date">10/05/2017 07:57</span>
-                  <p>
-                    Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
-                    con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
-                    chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
+                    Một mình ôm con trong bệnh viện, chị đau thắt lòng khi
+                    thấy con suốt ngày quấy khóc bởi khối u to căng mọng trên
+                    mặt chỉ chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành
+                    hạ...
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a id="more-view" href="news.html"
-          >Xem thêm
-          <i class="fas fa-angle-double-right"></i>
-        </a>
-      </div>
-      <!------End New-1------>
-
-      <!------Send-info------>
-
-      <div id="send-info">
-        <div id="send-info-bg">
-          <img src="images/gui-thong-tin-bg.jpg" alt="send-info-bg" />
-        </div>
-        <div class="row send-info-content">
-          <div id="form-info" class="col-lg-5 col-md-5 col-sm-5">
-            <h5>Liên hệ với chúng tôi</h5>
-            <form action="#">
-              <input type="text" placeholder="Họ và Tên" />
-              <input type="text" placeholder="Số điện thoại" />
-              <input type="text" placeholder="Email" />
-              <textarea
-                name="mess"
-                id="mess"
-                placeholder="Lời nhắn của bạn"
-              ></textarea>
-              <input id="send-form" type="submit" value="Gửi" />
-            </form>
-          </div>
-          <div id="story" class="col-lg-7 col-md-7 col-sm-7">
-            <h3>Câu chuyện của chúng tôi</h3>
-            <p>
-              Trong xã hội hiện nay vẫn còn rất nhiều những hoàn cảnh, những
-              mảnh đời khó khăn cần được giúp đỡ. Mỗi ngày, vẫn có những nhà hảo
-              tâm, những người tốt mang những yêu thương đi sẻ chia cho những số
-              phận đó. Đó là hoạt động từ thiện – một trong những hoạt động tích
-              cực đang được lan rộng hiện nay. <span>NHỊP CẦU TỪ THIỆN </span>–
-              kết nối Những nhà hảo tâm, người tốt (Người tài trợ) với những
-              hoàn cảnh, mảnh đời khó khăn (Người nhận tài trợ) vì Cuộc đời luôn
-              tràn ngập ý nghĩa khi yêu thương và sẻ chia!
-            </p>
-            <a href="our-story.html">Xem thêm</a>
-          </div>
-        </div>
-      </div>
-      <!------End Send-info------>
-
-      <!------Partner------>
-
-      <div id="partner">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-1.png" alt="partner-1" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-2.png" alt="partner-2" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-3.png" alt="partner-3" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-4.png" alt="partner-4" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-5.png" alt="partner-5" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-6.png" alt="partner-6" />
-          </div>
-        </div>
-      </div>
-
-      <!------End Partner------>
-
-      <!------Footer---- -->
-
-      <div id="footer">
-        <div class="row">
-          <div class="img-footer col-lg-5 col-md-5 col-sm-6">
-            <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
-          </div>
-          <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
-            <h4>LIÊN HỆ</h4>
-            <p>
-              Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
-              Thành phố Hà Nội.
-            </p>
-            <p>Email: NCTT@gmail.com;</p>
-            <p>Fanpage:</p>
-            <p>Website:</p>
-            <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
-            <div class="social">
-              <a href="#"
-                ><img class="social-item" src="images/fb-icon.png" alt="fb"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/mail-icon.png" alt="mail"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/mess-icon.png" alt="mess"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/zalo-icon.png" alt="zalo"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/bank-icon.png" alt="bank"
-              /></a>
+        <div class="col-lg-5 col-md-5 news-item-right">
+          <div class="news-item ">
+            <div class="row">
+              <div class="col-lg-6  ">
+                <img src="images/news-2.jpg" alt="news-2" />
+              </div>
+              <div class="col-lg-6">
+                <a href="#">
+                  <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
+                </a>
+                <span class="date">10/05/2017 07:57</span>
+                <p>
+                  Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
+                  con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
+                  chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
+                </p>
+              </div>
             </div>
           </div>
-          <div class="link-footer col-lg-2 col-md-2 col-sm-12">
-            <a href="index.html">Trang chủ</a>
-            <a href="about.html">Về chúng tôi</a>
-            <a href="hay-tham-gia.html">Hãy tham gia</a>
-            <a href="partner.html">Đối tác</a>
-            <a href="news.html">Tin tức</a>
-            <a href="goi-tu-thien.html">Gói từ thiện</a>
-            <a href="contact.html">Liên hệ</a>
+          <div id="right-2" class="news-item mt-5">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="images/news-3.jpg" alt="news-2" />
+              </div>
+              <div class="col-lg-6">
+                <a href="#">
+                  <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
+                </a>
+                <span class="date">10/05/2017 07:57</span>
+                <p>
+                  Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
+                  con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
+                  chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!------End Footer------>
+      <a id="more-view" href="news.html">Xem thêm
+        <i class="fas fa-angle-double-right"></i>
+      </a>
+    </div>
+    <!------End New-1------>
+
+    <!------Send-info------>
+
+    <div id="send-info">
+      <div id="send-info-bg">
+        <img src="images/gui-thong-tin-bg.jpg" alt="send-info-bg" />
+      </div>
+      <div class="row send-info-content">
+        <div id="form-info" class="col-lg-5 col-md-5 col-sm-5">
+          <h5>Liên hệ với chúng tôi</h5>
+          <form action="#">
+            <input type="text" placeholder="Họ và Tên" />
+            <input type="text" placeholder="Số điện thoại" />
+            <input type="text" placeholder="Email" />
+            <textarea name="mess" id="mess" placeholder="Lời nhắn của bạn"></textarea>
+            <input id="send-form" type="submit" value="Gửi" />
+          </form>
+        </div>
+        <div id="story" class="col-lg-7 col-md-7 col-sm-7">
+          <h3>Câu chuyện của chúng tôi</h3>
+          <p>
+            Trong xã hội hiện nay vẫn còn rất nhiều những hoàn cảnh, những
+            mảnh đời khó khăn cần được giúp đỡ. Mỗi ngày, vẫn có những nhà hảo
+            tâm, những người tốt mang những yêu thương đi sẻ chia cho những số
+            phận đó. Đó là hoạt động từ thiện – một trong những hoạt động tích
+            cực đang được lan rộng hiện nay. <span>NHỊP CẦU TỪ THIỆN </span>–
+            kết nối Những nhà hảo tâm, người tốt (Người tài trợ) với những
+            hoàn cảnh, mảnh đời khó khăn (Người nhận tài trợ) vì Cuộc đời luôn
+            tràn ngập ý nghĩa khi yêu thương và sẻ chia!
+          </p>
+          <a href="our-story.html">Xem thêm</a>
+        </div>
+      </div>
+    </div>
+    <!------End Send-info------>
+
+    <!------Partner------>
+
+    <div id="partner">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-1.png" alt="partner-1" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-2.png" alt="partner-2" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-3.png" alt="partner-3" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-4.png" alt="partner-4" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-5.png" alt="partner-5" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <img src="images/doi-tac-6.png" alt="partner-6" />
+        </div>
+      </div>
     </div>
 
-    <!-- Script -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
+    <!------End Partner------>
+
+    <!------Footer---- -->
+
+    <div id="footer">
+      <div class="row">
+        <div class="img-footer col-lg-3 col-md-5 col-sm-6">
+          <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
+        </div>
+        <div class="contact-info col-lg-4 pr-5 col-md-5 col-sm-6">
+          <h4>LIÊN HỆ</h4>
+          <p>
+            Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
+            Thành phố Hà Nội.
+          </p>
+          <p>Email: NCTT@gmail.com;</p>
+          <p>Fanpage:</p>
+          <p>Website:</p>
+          <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
+          <div class="social">
+            <a href="#"><img class="social-item" src="images/fb-icon.png" alt="fb" /></a>
+            <a href="#"><img class="social-item" src="images/mail-icon.png" alt="mail" /></a>
+            <a href="#"><img class="social-item" src="images/mess-icon.png" alt="mess" /></a>
+            <a href="#"><img class="social-item" src="images/zalo-icon.png" alt="zalo" /></a>
+            <a href="#"><img class="social-item" src="images/bank-icon.png" alt="bank" /></a>
+          </div>
+        </div>
+        <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+          <a href="index.html">Trang chủ</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="hay-tham-gia.html">Hãy tham gia</a>
+          <a href="partner.html">Đối tác</a>
+          <a href="news.html">Tin tức</a>
+          <a href="goi-tu-thien.html">Gói từ thiện</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+        <div class="maps col-lg-3">
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=t%C3%B2a%209%20khu%20%C4%91%C3%B4%20th%E1%BB%8B%20ph%C3%A1p%20v%C3%A2n&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://usave.co.uk">usave</a></div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: center;
+                /* height: 500px; */
+                /* width: 600px; */
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                /* height: 500px; */
+                /* width: 600px; */
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------End Footer------>
+  </div>
+
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
