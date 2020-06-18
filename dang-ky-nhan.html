@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -434,3 +435,453 @@
     ></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/responsive.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- ----Header--- -->
+
+      <div id="header">
+          <div class="row">
+            <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+              <img src="images/logo-header.png" alt="logo" />
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-8">
+              <h4>Trao yêu thương từ trái tim!</h4>
+            </div>
+            <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
+              <input type="text" value="" placeholder="Tìm kiếm" />
+              <a id="search" class="mr-2">
+                <img src="images/search-icon.png" alt="search-icon" />
+              </a>
+              <a class = "mr-2" href="">Login</a>
+              <a id="language">
+                <img src="images/vn-icon.png" alt="vn-icon" />
+              </a>
+            </div>
+          </div>
+          <ul id="nav-header">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
+            <li><a href="partner.html">Đối tác</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+          <div id="nav-header-collapse">
+            <nav class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse"
+                aria-controls="collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </nav>
+            <div class="collapse" id="collapse">
+              <ul id="nav-collapse">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
+                <li><a class="active-tab" href="partner.html">Đối tác</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!-- ----End Header---- -->
+
+      <div class="main">
+        <div id="form-nhan">
+          <div class="title">
+            <img id="header-form-bg" src="images/title-bg.png" alt="title" />
+            <h1>Đăng ký người nhận từ thiện</h1>
+          </div>
+          <div class="content-form">
+            <div id="form-1" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-1" class="text">Các nhóm nhận từ thiện:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <select name="f-1" id="f-1">
+                    <option value="">- Chọn nhóm nhận từ thiện</option>
+                    <option value="">- Trẻ em/ Các nhóm nhân cần bảo trợ</option>
+                    <option value="">- Cá nhân gặp khó khăn</option>
+                    <option value="">- Gia đình/Nhóm người ruột thịt</option>
+                    <option value="">- Nhóm cần hỗ trợ</option>
+                    <option value="">- Tổ chức cần giúp đỡ</option>
+                    <option value="">- Vùng bị thiên tai nạn dịch</option>
+                    <option value="">- Quỹ từ thiện/Tổ chức hoạt động từ thiện</option>
+                    <option value="">- Các bên khác</option>
+                  </select>
+                  <input type="text" placeholder="   Ô điền thông tin khi chọn các bên khác">
+                </div>
+              </div>
+            </div>
+            <div id="form-2" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-2" class="text">Tên tổ chức/cá nhân/nhóm/vùng:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền tên tổ chức/cá nhân/nhóm vùng"/>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-3" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-3" class="text">
+                    Thuộc tổ chức/cá nhân/nhóm vùng:
+                  </p>
+                </div>
+                <div class="col-lg-5 option">
+                  <div class="row checkbox-1">
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="checkbox" name="" id="" />
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                          <span>Tổ chức</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="checkbox" name="" id="" />
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                          <span>Cá nhân</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="checkbox" name="" id="" />
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                          <span>Nhóm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="checkbox" name="" id="" />
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                          <span>Vùng</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-4" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-4" class="text">
+                    Địa chỉ của tổ chức/cá nhân/nhóm vùng:
+                  </p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền địa chỉ của tổ chức/cá nhân"/>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-5" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-5" class="text">Website, Fanpage:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền Website, Fanpage:"/>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-6" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-6" class="text">Người đại diện:</p>
+                </div>
+                <div class="col-lg-5 option option-1">
+                  <input type="text" placeholder="   Ô điền Người đại diện" />
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-7" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-7" class="text">Giới tính:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <div class="row">
+                  <div class="col-lg-6">
+                      <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <input type="checkbox" name="" id="" />
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <span>Nam</span>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <input type="checkbox" name="" id="" />
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <span>Nữ</span>
+                    </div>
+                </div>
+                  </div>
+                </div>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-8" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-8" class="text">Địa chỉ liên hệ:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền địa chỉ liên hệ"/>
+                </div>
+                <span class="require">*</span>
+              </div>
+            </div>
+            <div id="form-9" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-9" class="text">Email liên hệ:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền Email liên hệ" />
+                </div>
+              </div>
+            </div>
+            <div id="form-10" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-10" class="text">Điện Thoại liên hệ:</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền điện thoại liên hệ"/>
+                </div>
+              </div>
+            </div>
+            <div id="form-11" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id = "text-11-2" class="text">Đặc điểm chủ đạo Tổ chức/cá nhân/nhóm vùng</p>
+                </div>
+                <div class="col-lg-5 option">
+                  <input type="text" placeholder="   Ô điền đặc điểm chủ đạo" />
+                </div>
+              </div>
+            </div>
+            <div id="form-12" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-12" class="text">Hình thức nhận tài trợ mong muốn</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <select name="f-2" id="f-2">
+                      <option value="">- Chọn hình thức tài trợ mong muốn</option>
+                      <option value="">- Tiền</option>
+                      <option value="">- Hàng hóa</option>
+                      <option value="">- Chi phí dịch vụ</option>
+                      <option value="">- Sự tham gia đồng hành</option>
+                      <option value="">- Truyền thông lan tỏa</option>
+                      <option value="">- Khác -</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div id="form-13" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-13" class="text">Tài khoản giao dịch:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <input type="text" placeholder="   Ô điền tài khoản giao dịch">
+                </div>
+              </div>
+            </div>
+            <div id="form-14" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-14" class="text">Mã số thuế Tổ chức/Cá nhân:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <input type="text" placeholder="   Ô điền mã số thuế">
+                </div>
+              </div>
+            </div>
+            <div id="form-15" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-15" class="text">Mô tả nhu cầu, mong muốn nhận tài trợ</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <input type="text" placeholder="   Ô điền mô tả nhu cầu, mong muốn tài trợ">
+                    <a id="upload-file" href="#">Upload File
+                        <img src="images/upload-icon.png" alt="upload">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div id="form-16" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-16" class="text">Khoảng giá trị tài trợ:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <select name="f-3" id="f-3">
+                      <option value="">- Chọn khoảng tài trợ -</option>
+                      <option value="">- Từ 0-20 triệu</option>
+                      <option value="">- Từ 20-50 triệu</option>
+                      <option value="">- Trên 50 triệu</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div id="form-17" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-17" class="text">Tần suất tài trợ:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <input type="text" placeholder="   Ô điền tần suất tài trợ">
+                </div>
+              </div>
+            </div>
+            <div id="form-18" class="form-item">
+              <div class="row">
+                <div class="col-lg-7 title-form">
+                  <p id="text-18" class="text">Giá trị mong muốn:</p>
+                </div>
+                <div class="col-lg-5 option">
+                    <input type="text" placeholder="   Ô điền giá trị mong muốn">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-form">
+            <img id="footer-form-bg" src="images/footer-dangky-bg.png" alt="footer-bg">
+            <a href="index.html">Quay về trang chủ</a>
+            <a href="index.html">Đăng ký tài khoản</a>
+          </div>
+        </div>
+      </div>
+
+      <!------Footer---- -->
+
+      <div id="footer">
+          <div class="row">
+            <div class="img-footer col-lg-5 col-md-5 col-sm-6">
+              <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
+            </div>
+            <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
+              <h4>LIÊN HỆ</h4>
+              <p>
+                Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
+                Thành phố Hà Nội.
+              </p>
+              <p>Email: NCTT@gmail.com;</p>
+              <p>Fanpage:</p>
+              <p>Website:</p>
+              <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
+              <div class="social">
+                <a href="#"
+                  ><img class="social-item" src="images/fb-icon.png" alt="fb"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/mail-icon.png" alt="mail"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/mess-icon.png" alt="mess"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/zalo-icon.png" alt="zalo"
+                /></a>
+                <a href="#"
+                  ><img class="social-item" src="images/bank-icon.png" alt="bank"
+                /></a>
+              </div>
+            </div>
+            <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+              <a href="index.html">Trang chủ</a>
+              <a href="about.html">Về chúng tôi</a>
+              <a href="hay-tham-gia.html">Hãy tham gia</a>
+              <a href="partner.html">Đối tác</a>
+              <a href="news.html">Tin tức</a>
+              <a href="goi-tu-thien.html">Gói từ thiện</a>
+              <a href="contact.html">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      <!------End Footer------>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> a0477af8685f23438738879cb476e087ee2dbbac
