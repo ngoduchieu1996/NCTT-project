@@ -27,18 +27,40 @@
       <div id="header">
         <div class="row">
           <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
-            <img src="images/logo-header.png" alt="logo" />
+            <a href="index.html"><img src="images/logo-header.png" alt="logo" /></a>
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-8">
-            <h4>Trao yêu thương từ trái tim!</h4>
+          <div class="col-lg-5 col-md-5 col-sm-8 justify-content-center">
+            <a href="index.html" style="background-color: transparent;"><h4>Từ trái tim đến trái tim</h4></a>
           </div>
           <div id="header-left" class="col-lg-5 col-md-5 col-sm-12 p-0">
             <input type="text" value="" placeholder="Tìm kiếm" />
-            <a id="search" class="ml-2 mr-2 pl-4 pr-4">
-              <img src="images/search-icon.png" alt="search-icon" />
+            <a id="search" class="ml-2 mr-2 pl-3 pr-3">
+              <img src="images/search-icon-origin.png" alt="search-icon" />
             </a>
-            <a class = "mr-2 rounded pl-4 pr-4" href="">
-              <i class="fas fa-user">Login</i>
+            <a class = "mr-2 rounded pl-2 pr-2 login_hover-form" href="#">
+                <!-- ---login--- -->
+                <form class="form-login">
+                  <div class="form-group">
+                      <label for="Email1">Tên người dùng hoặc Địa chỉ</label>
+                    <label for="Email1">Email</label>
+                    <input type="email" class="form-control" id="InputEmail1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Mật khẩu</label>
+                    <input type="password" class="form-control"  id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Tự động đăng nhập  
+                      </label>
+                    </div>
+                  <button type="submit" class="btn btn-color">Đăng nhập</button>
+                </form>
+               <!-- ---login--- -->
+               <div class="form_login-icon">
+                <i class="fas fa-user"></i>Login
+               </div>
+             
           </a>
             <a id="language">
               <img src="images/vn-icon.png" alt="vn-icon" />
@@ -78,75 +100,86 @@
         </div>
       </div>
     <!-- ----End Header---- -->
-
-
       <div class="main">
-       <section class="about-section-1"></section>
-       <section class="about-section-2">
-         <div class="row">
-           <div class="col-4">
-             <ul class="nav nav-tabs">
-               <li class="active"><a data-toggle="tab" href="#tab1">
-                 <p class="tab-title">Chúng tôi là ai</p>
-                 <img src="images/we-icon.png" alt=""></a></li>
-               <li><a data-toggle="tab" href="#tab2">
-                <p class="tab-title">Sứ mệnh</p>
-                 <img src="images/we-icon.png" alt=""></a></li>
-               <li><a data-toggle="tab" href="#tab3">
-                <p class="tab-title">Tầm nhìn</p>
-                <img src="images/we-icon.png" alt=""></a></li>
-               <li><a data-toggle="tab" href="#tab4">
-                <p class="tab-title">Giá trị cốt lõi</p>
-                 <img src="images/we-icon.png" alt=""></a></li>
-               <li><a data-toggle="tab" href="#tab5">
-                <p class="tab-title">Mục tiêu</p>
-                 <img src="images/we-icon.png" alt=""></a></li>
-             </ul>
-             <div class="tab-content">
-              <div id="#tab1" class="tab-pane fade in active">
-                <h3>tab1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div id="#tab2" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div id="#tab3" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-              <div id="#tab4" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-           </div>
-           <div class="col-8"></div>
-         </div>
-       </section>
-       <section class="about-section-3">
-        <h2 class="text-center">ĐỘI NGŨ CỦA CHÚNG TÔI</h2>
+        <!-- ---start-fixed-left-logo--- -->
+        <div class="fix-home-button">
+          <a href="#">
+              <img src="images/logo-header.png" alt="home">
+          </a>
+      </div>
+      <!-- ---end-fixed-left-logo--- -->
+      <!-- -------messenger ------- -->
+      <div class="messenger">
+        messenger
+        <div id='fb-root'></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class='fb-customerchat'
+          attribution="wordpress"
+          page_id='111554506928605'
+          logged_in_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+          logged_out_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+          >
+      </div> 
+      </div> 
+      <!-- -------end-messenger------- -->
+      <!-- -----start-about-banner----- -->
+      <div id="about-banner">
+      </div>
+      <!-- -----end-about-banner----- -->
+      <!-- ----start-about-main---- -->
+      <div id="about-main">
+        <div class="row">
+          <div class="col-4">
+            <ul>
+              <li><a href="#"></a>
+                <p>Chúng tôi là ai</p>
+                <img src="images/we-icon.png" alt=""></li>
+              <li><a href="#"></a>
+                <p>Sứ mệnh</p>
+                <img src="images/we-icon.png" alt=""></li>
+              <li><a href="#"></a>
+                <p>Tầm nhìn</p>
+                <img src="images/we-icon.png" alt=""></li>
+              <li><a href="#"></a>
+                <p>Giá trị cốt lõi</p>
+                <img src="images/we-icon.png" alt=""></li>
+              <li><a href="#"></a>
+                <p>Mục tiêu</p>
+                <img src="images/we-icon.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="col-8"></div>
+        </div>
+      </div>
+      <!-- ----end-about-main---- -->
+      <!-- ---start-section-1--- -->
+      <section class="index-Section-1 positon-relative">
         <div class="row m-0">
-          <div class="col-12 p-0 m-0">
-              <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="3000">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <div class="col-12 p-0 m-0">
+                <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
                         <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                      </div>
                     </div>
                   </div>
-                </div>
-          </div>
+            </div>
+        </div>
+      </section>
+      <!-- ---end-section-1--- -->
       </div>
-       </section>
-      </div>
-
       <!------Footer---- -->
-
       <div id="footer">
         <div class="row">
           <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
