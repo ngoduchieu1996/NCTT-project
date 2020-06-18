@@ -58,20 +58,28 @@
 /*----End Color----*/
 /*----Header---*/
 #header .row {
-  margin: 0 80px;
+  margin: 0;
+}
+#logo{
+  padding: 15px 0px;
 }
 
-#header img {
-  width: 80%;
+#header #logo img {
+  width: 85%;
+  height: 100%;
   cursor: pointer;
 }
-
+#header #header-left img{
+  width: 100%;
+}
 #header h4 {
   font-family: "NeoBold";
-  font-size: 30px;
+  font-size: 22px;
   color: #ec268f;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
 }
-
 #header #header-left,
 #header .col-lg-5 {
   margin: auto 0;
@@ -82,7 +90,16 @@
       -ms-flex-pack: baseline;
           justify-content: baseline;
 }
-
+#header .form_login-icon{
+    display: flex;
+    width: 100%;
+    margin: auto 0;
+    align-items: center;
+    padding: 0 5px;
+}
+#header .form_login-icon i{
+  margin-right: 10px;
+}
 #header #header-left ::-webkit-input-placeholder,
 #header .col-lg-5 ::-webkit-input-placeholder {
   padding-left: 10px;
@@ -105,10 +122,11 @@
 
 #header #header-left input,
 #header .col-lg-5 input {
-  height: 40px;
+  height: auto;
   background-color: #ebebeb;
   border: none;
-  width: 50%;
+  width: 60%;
+  border: 1px solid grey;
 }
 
 #header #header-left a,
@@ -117,9 +135,10 @@
   padding: 2px 6px;
   color: white;
   border: none;
-  font-family: "Open";
+  font-family: "NeoBold";
   font-size: 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #header #header-left #language,
@@ -132,6 +151,7 @@
   background-color: #ebebeb;
   text-align: center;
   margin-bottom: 0;
+  padding: 0;
 }
 
 #header #nav-header li {
@@ -141,19 +161,23 @@
 
 #header #nav-header li a {
   display: inline-block;
-  padding: 15px 8px;
-  font-size: 22px;
-  font-family: "Open";
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: NeoBold;
+  color:black;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  letter-spacing: 1.23px;
+  transition: all 0.3s ease-in;
+  line-height: 1;
+  cursor: pointer;
 }
 
 #header #nav-header li a:hover {
   color: white;
 }
 
-#header #nav-header li .active-tab {
+#header #nav-header .active-tab {
   background-color: #00a859;
   color: white;
 }
@@ -161,6 +185,11 @@
 #header #nav-header li a:hover {
   text-decoration: none;
   background-color: #00a859;
+}
+#header h4:hover {
+  color: #4aa461;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 #header #nav-header-collapse {
@@ -586,8 +615,9 @@
 /*----End Partner----*/
 /*----Footer----*/
 #footer {
-  background-color: #ebebeb;
+  background-color: #1AA5DD;;
   padding: 50px 0;
+  color: white;
 }
 
 #footer .row {
@@ -602,32 +632,45 @@
   font-family: "NeoBold";
 }
 
-#footer .contact-info p {
+#footer .contact-info p,
+#footer .contact-info p a {
   font-family: "Myriad";
-  color: #898a8a;
+  color: white;
   margin-bottom: 5px;
   font-size: 14px;
 }
-
+#footer .contact-info .social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #footer .contact-info .social img {
-  width: 15%;
+  width: 40px;
+  height: 40px;
+  border-radius: .25rem;
+  
+}
+#footer .social a:hover img{
+  transform: scale(1.2);
 }
 
 #footer .contact-info .social .social-item {
-  padding: 10px 15px 0px 0px;
+  padding: 0;
 }
 
 #footer .link-footer a {
   display: block;
-  color: #898a8a;
+  color: white;
   font-family: "NeoRegu";
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 #footer .link-footer a:hover {
   text-decoration: none;
   text-shadow: 0 0 1px #898a8a;
+  color: #af2e29;
+  transition: all 0.3s ease-in;
 }
 
 /*----End Footer---*/
@@ -2158,8 +2201,7 @@
 }
 
 .main {
-  background-color: #959595;
-  padding: 40px 150px;
+  background-color:transparent;
 }
 
 #form-trao,
@@ -2461,3 +2503,339 @@
   border-left: 20px solid #b0eaff;
 }
 /*# sourceMappingURL=style.css.map */
+body{
+  src: url(/fonts/UTM-Neo-Sans-Intel.ttf);
+  font-family: UTMNeoSans;
+}
+/* ---start-header--- */
+.login_hover-form{
+  position: relative;
+}
+.form-login{
+  position: absolute;
+  background-color:white;
+  top:100%;
+  left:0;
+  transform: translateX(-27%);
+  z-index: 1;
+  min-width: 250px;
+  color: black;
+  padding: 20px;
+  display: none;
+  font-size: 0.7em;
+}
+.form-login input{
+  width: 100% !important;
+}
+.form-login button{
+  color: white;
+  background-color: #03A859 ;
+  border-color: #03A859;
+}
+.login_hover-form:hover .form-login{
+  display: block;
+}
+.form-login .form-check-input{
+  width: auto !important;
+}
+/* ---end-header--- */
+
+/*----start-index-main----*/
+#wrapper{
+  padding: 0 15%;
+}
+.fix-home-button {
+  position: fixed;
+  z-index: 99999;
+  bottom: 50px;
+  left: 80px;
+}
+.fix-home-button img {
+  width: 50px;
+  height: 50px;
+}
+.messenger{
+  position: fixed; 
+  right: 50px; 
+  bottom: 80px;
+  width: 50px;
+  height: 50px;
+}
+/* ---start-section-1--- */
+.index-Section-1 img{
+  max-height: 350px;
+  object-fit:cover;
+}
+/* ---end-section-1--- */
+/* ---start-section-2--- */
+.index-Section-2{
+  color: #1301ff;
+  margin: 20px 0;
+}
+.index-Section-2 a{
+  background-color:#a0a0a0;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.index-Section-2 .rounded{
+  border-radius: .6rem !important;
+}
+/* ---end-section-2--- */
+/* ---start-section-3--- */
+.index-Section-3{
+  margin-bottom: 30px;
+}
+.index-Section-3 a{
+  background-color:#01b7f1;
+  color:#35404a;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.index-Section-3 .rounded{
+  border-radius: .6rem !important;
+}
+/* ---end-section-3--- */
+/* ---start-section-4--- */
+.index-Section-4{
+  background-image: url(https://nhipcaututhien.vn/wp-content/uploads/2019/08/linh-vuc-bg.jpg);
+  min-height: 700px;
+  position: relative;
+}
+.index-Section-4 h3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.index-Section-4 a{
+ color: black;
+ text-decoration: none;
+}
+.index-Section-4 a:hover{
+  color: black;
+  text-decoration: none;
+ }
+.index-Section-4 figure{
+  margin: 0;
+}
+.index-Section-4 img{
+  max-width: 100%;
+  object-fit:cover;
+  margin-bottom: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 5% 5%;
+  transform:translateY(10%);
+}
+.grid-item {
+  background-color: #CCCCCC;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  transition: transform .6s;
+  box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}
+.grid-item:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.02);
+}
+.item3:hover{
+  transform: translateX(60%) scale(1.02);
+}
+.item4:hover{
+  transform: translateY(-80%) scale(1.02);
+}
+.item5:hover{
+  transform: translateX(-60%) scale(1.02);
+}
+.item8:hover{
+  transform: translateY(-40%) scale(1.02);
+}
+.item1{
+  grid-column:2/2;
+}
+.item2{
+  grid-column:4/4;
+}
+.item3{
+  grid-column:1/1;
+   transform:translateX(60%);
+}
+.item4{
+  grid-column:3/3;
+  transform:translateY(-80%);
+}
+.item5{
+  grid-column:5/5;
+  transform:translateX(-60%);
+}
+.item6{
+  grid-column:2/2;
+}
+.item7{
+  grid-column:4/4;
+}
+.item8{
+  grid-column:3/3;
+  transform:translateY(-40%);
+}
+/* ---end-section-4--- */
+/* ---start-section-5--- */
+.index-Section-5{
+  background-color: #D42281;
+  min-height: 400px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 49% 100%, 0 90%);
+  position: relative;
+  font-size: 0.65rem;
+  color: white;
+  padding: 40px 0;
+}
+.index-Section-5 a{
+  text-decoration: none;
+  color: white;
+}
+.index-Section-5 a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.index-Section-5 #more-view{
+  position:absolute;
+  top:90%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  font-size: 30px;
+}
+.index-Section-5 #news a{
+  position: absolute;
+  background-color: #FC49A6;
+  font-size: 34px;
+  left:0;
+  top:50%;
+  transform: translateY(-60%);
+  width: 200px;
+  height: 87px;
+  clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
+}
+.index-Section-5 #news a p{
+  position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+.index-Section-5 img{
+  width: 100%;
+  height: auto;
+}
+/* ---end-section-5--- */
+/* ---start-section-6--- */
+.index-Section-6{
+  background-image:url(https://nhipcaututhien.vn/wp-content/uploads/2019/08/bg-form.jpg);
+  position: relative;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit:cover;
+  padding: 30px 5%;
+  line-height: 1.6;
+}
+
+.index-Section-6 h5{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+}
+.index-Section-6 h3{
+  font-size: 24px;
+}
+.index-Section-6 .story{
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+.index-Section-6 #input-Name , .index-Section-6 #input-Phone  {
+  height: 38px;
+  border-radius: 0;
+}
+.index-Section-6 textarea{
+  height: 143px;
+  padding: 10px;
+}
+.btn_xemthem-right{
+  float: right;
+}
+.index-Section-6 .btn-primary{
+  margin-top: 10px;
+  border-radius: 10px !important;
+  background-color: #00afef;
+  border-color: #00afef;
+}
+.index-Section-6:hover .btn-primary{
+  background-color: #00afef;
+  border-color: #00afef;
+}
+/* ---end-section-6--- */
+/* ---start-section-7--- */
+.index-Section-7{
+  margin: 28px 0;
+}
+.index-Section-7 img{
+  max-height: 280px;
+  object-fit:cover;
+}
+/* ---end-section-7--- */
+/*----End-index-menu----*/
+
+
+/*----start-about-menu----*/
+/* ---start-section-1--- */
+.about-section-1{
+  background-image:url(https://nhipcaututhien.vn/wp-content/uploads/2019/08/banner-about.jpg);
+  min-height: 350px;
+  object-fit:cover;
+  position: relative;
+}
+/* ---end-section-1--- */
+/* ---start-section-2--- */
+.about-section-2{
+  position: relative;
+}
+.about-section-2 ul{
+  list-style: none;
+ }
+.about-section-2 li a{
+ text-decoration: none;
+ position: relative;
+}
+.about-section-2 img{
+  max-width: 70%;
+}
+.about-section-2 a p{
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+  top:50%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+  color: white;
+ }
+/* ---end-section-2--- */
+/* ---start-section-3--- */
+.about-section-3 img{
+  max-height: 350px;
+  object-fit:cover;
+}
+/* ---end-section-3--- */
+/*----end-about-menu----*/

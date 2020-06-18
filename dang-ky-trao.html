@@ -21,65 +21,65 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <!-- ----Header--- -->
 
-      <div id="header">
-          <div class="row">
-            <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
-              <img src="images/logo-header.png" alt="logo" />
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-8">
-              <h4>Trao yêu thương từ trái tim!</h4>
-            </div>
-            <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
-              <input type="text" value="" placeholder="Tìm kiếm" />
-              <a id="search" class="mr-2">
-                <img src="images/search-icon.png" alt="search-icon" />
-              </a>
-              <a class = "mr-2" href="">Login</a>
-              <a id="language">
-                <img src="images/vn-icon.png" alt="vn-icon" />
-              </a>
-            </div>
-          </div>
-          <ul id="nav-header">
+    <!-- ----Header--- -->
+
+    <div id="header">
+      <div class="row">
+        <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+          <img src="images/logo-header.png" alt="logo" />
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-8">
+          <h4>Trao yêu thương từ trái tim!</h4>
+        </div>
+        <div id="header-left" class="col-lg-5 col-md-5 col-sm-12 p-0">
+          <input type="text" value="" placeholder="Tìm kiếm" />
+          <a id="search" class="ml-2 mr-2 pl-4 pr-4">
+            <img src="images/search-icon.png" alt="search-icon" />
+          </a>
+          <a class = "mr-2 rounded pl-4 pr-4" href="">
+            <i class="fas fa-user">Login</i>
+        </a>
+          <a id="language">
+            <img src="images/vn-icon.png" alt="vn-icon" />
+          </a>
+        </div>
+      </div>
+      <ul id="nav-header">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="partner.html">Đối tác</a></li>
+        <li><a href="news.html">Tin tức</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div id="nav-header-collapse">
+        <nav class="navbar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapse"
+            aria-controls="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <div class="collapse" id="collapse">
+          <ul id="nav-collapse">
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="about.html">Về chúng tôi</a></li>
-            <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
-            <li><a href="partner.html">Đối tác</a></li>
+            <li><a class="active-tab" href="partner.html">Đối tác</a></li>
             <li><a href="news.html">Tin tức</a></li>
-            <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
           </ul>
-          <div id="nav-header-collapse">
-            <nav class="navbar">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapse"
-                aria-controls="collapse"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-            </nav>
-            <div class="collapse" id="collapse">
-              <ul id="nav-collapse">
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="about.html">Về chúng tôi</a></li>
-                <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
-                <li><a class="active-tab" href="partner.html">Đối tác</a></li>
-                <li><a href="news.html">Tin tức</a></li>
-                <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      <!-- ----End Header---- -->
+      </div>
+    </div>
+  <!-- ----End Header---- -->
 
       <div class="main">
         <div id="form-trao">
@@ -332,10 +332,10 @@
                 </div>
                 <div class="col-lg-5 option">
                     <select name="f-3" id="f-3">
-                        <option value="">- Chọn khoảng tài trợ -</option>
-                        <option value="">- Dưới 20</option>
-                        <option value="">- Dưới 50</option>
-                        <option value="">- Trên 50</option>
+                      <option value="">- Chọn khoảng tài trợ -</option>
+                      <option value="">- Từ 0-20 triệu</option>
+                      <option value="">- Từ 20-50 triệu</option>
+                      <option value="">- Trên 50 triệu</option>
                     </select>
                 </div>
               </div>
@@ -384,51 +384,41 @@
 
       <!------Footer---- -->
 
+      <!------Footer---- -->
+
       <div id="footer">
-          <div class="row">
-            <div class="img-footer col-lg-5 col-md-5 col-sm-6">
-              <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
-            </div>
-            <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
-              <h4>LIÊN HỆ</h4>
-              <p>
-                Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
-                Thành phố Hà Nội.
-              </p>
-              <p>Email: NCTT@gmail.com;</p>
-              <p>Fanpage:</p>
-              <p>Website:</p>
+        <div class="row">
+          <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
+            <h4>LIÊN HỆ</h4>
+            <p><strong>Công Ty CP Kỹ Thuật Môi Trường Và Xây Dựng VINACEE Việt Nam</strong></p>
+            <p>Phòng 412, Nơ 9, KĐT Pháp Vân,
+              quận Hoàng Mai, Hà Nội</p>
+              <p>Email: <a class="text-is-email" href="mailto:nhipcaututhienvn@gmail.com">nhipcaututhienvn@gmail.com</a></p>
+              <p>Fanpage: <a href="https://www.facebook.com/Nh%E1%BB%8Bp-c%E1%BA%A7u-t%E1%BB%AB-thi%E1%BB%87n-111554506928605/" target="_blank" rel="noopener noreferrer">Nhịp Cầu Từ Thiện</a></p>
+              <p>Website: <a href="https://nhipcaututhien.vn/">nhipcaututhien.vn</a></p>
               <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
-              <div class="social">
-                <a href="#"
-                  ><img class="social-item" src="images/fb-icon.png" alt="fb"
-                /></a>
-                <a href="#"
-                  ><img class="social-item" src="images/mail-icon.png" alt="mail"
-                /></a>
-                <a href="#"
-                  ><img class="social-item" src="images/mess-icon.png" alt="mess"
-                /></a>
-                <a href="#"
-                  ><img class="social-item" src="images/zalo-icon.png" alt="zalo"
-                /></a>
-                <a href="#"
-                  ><img class="social-item" src="images/bank-icon.png" alt="bank"
-                /></a>
-              </div>
-            </div>
-            <div class="link-footer col-lg-2 col-md-2 col-sm-12">
-              <a href="index.html">Trang chủ</a>
-              <a href="about.html">Về chúng tôi</a>
-              <a href="hay-tham-gia.html">Hãy tham gia</a>
-              <a href="partner.html">Đối tác</a>
-              <a href="news.html">Tin tức</a>
-              <a href="goi-tu-thien.html">Gói từ thiện</a>
-              <a href="contact.html">Liên hệ</a>
-            </div>
+            <h4>Tìm Chúng Tôi</h4>
+            <div class="social">
+              <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/facebook.png" alt="fb"></a><br>
+              <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/gmail.png" alt="gmail"></a>
+              <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/messenger.png" alt="mess"></a>
+              <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/08/zalo-icon.png" alt="zalo"></a>
+              <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/08/bank-icon.png" alt="bank"></a>
+          </div>
+          </div>
+          <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="partner.html">Đối tác</a>
+            <a href="news.html">Tin tức</a>
+            <a href="contact.html">Liên hệ</a>
+          </div>
+          <div class="img-footer col-lg-5 col-md-5 col-sm-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7451.844712167416!2d105.84678100000001!3d20.955633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb083b1a40f8a2743!2zVMOyYSAwOSAtIEtodSDEkcO0IHRo4buLIHBow6FwIHbDom4gLSBU4bupIEhp4buHcCAtIFBoxrDhu51uZyBIb8OgbmcgTGnhu4d0IC0gUS5Ib8OgbmcgTWFpIC0gSE4u!5e0!3m2!1svi!2sus!4v1592035960988!5m2!1svi!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
-      <!------End Footer------>
+      </div>
+    <!------End Footer------>
     </div>
 
     <!-- Script -->

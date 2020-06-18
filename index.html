@@ -18,368 +18,405 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Từ trái tim đến trái tim</title>
   </head>
+  
   <body>
-    <div class="container-fluid">
+    <div id="wrapper">
       <!-- ----Header--- -->
 
       <div id="header">
-        <div class="row">
-          <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
-            <img src="images/logo-header.png" alt="logo" />
-          </div>
-          <div class="col-lg-5 col-md-5 col-sm-8">
-            <h4>Trao yêu thương từ trái tim!</h4>
-          </div>
-          <div id="header-left" class="col-lg-5 col-md-5 col-sm-12">
-            <input type="text" value="" placeholder="Tìm kiếm" />
-            <a id="search" class="mr-2">
-              <img src="images/search-icon.png" alt="search-icon" />
+          <div class="row">
+            <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+              <img src="images/logo-header.png" alt="logo" />
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-8 justify-content-center">
+              <h4>Từ trái tim đến trái tim</h4>
+            </div>
+            <div id="header-left" class="col-lg-5 col-md-5 col-sm-12 p-0">
+              <input type="text" value="" placeholder="Tìm kiếm" />
+              <a id="search" class="ml-2 mr-2 pl-3 pr-3">
+                <img src="images/search-icon.png" alt="search-icon" />
+              </a>
+              <a class = "mr-2 rounded pl-2 pr-2 login_hover-form" href="#">
+                  <!-- ---login--- -->
+                  <form class="form-login">
+                    <div class="form-group">
+                        <label for="Email1">Tên người dùng hoặc Địa chỉ</label>
+                      <label for="Email1">Email</label>
+                      <input type="email" class="form-control" id="InputEmail1"  placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Mật khẩu</label>
+                      <input type="password" class="form-control"  id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Tự động đăng nhập  
+                        </label>
+                      </div>
+                    <button type="submit" class="btn btn-color">Đăng nhập</button>
+                  </form>
+                 <!-- ---login--- -->
+                 <div class="form_login-icon">
+                  <i class="fas fa-user"></i>Login
+                 </div>
+               
             </a>
-            <a class="mr-2" href="">Login</a>
-            <a id="language">
-              <img src="images/vn-icon.png" alt="vn-icon" />
-            </a>
+              <a id="language">
+                <img src="images/vn-icon.png" alt="vn-icon" />
+              </a>
+            </div>
+          </div>
+          <ul id="nav-header">
+            <li><a class="active-tab" href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="partner.html">Đối tác</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+          <div id="nav-header-collapse">
+            <nav class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse"
+                aria-controls="collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </nav>
+            <div class="collapse" id="collapse">
+              <ul id="nav-collapse">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a class="active-tab" href="partner.html">Đối tác</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <ul id="nav-header">
-          <li><a class="active-tab" href="index.html">Trang chủ</a></li>
-          <li><a href="about.html">Về chúng tôi</a></li>
-          <li>
-            <a href="hay-tham-gia.html">Hãy tham gia</a>
-          </li>
-          <li><a href="partner.html">Đối tác</a></li>
-          <li><a href="news.html">Tin tức</a></li>
-          <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-        <div id="nav-header-collapse">
-          <nav class="navbar">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapse"
-              aria-controls="collapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-          </nav>
-          <div class="collapse" id="collapse">
-            <ul id="nav-collapse">
-              <li><a class="active-tab" href="index.html">Trang chủ</a></li>
-              <li><a href="about.html">Về chúng tôi</a></li>
-              <li><a href="hay-tham-gia.html">Hãy tham gia</a></li>
-              <li><a href="partner.html">Đối tác</a></li>
-              <li><a href="news.html">Tin tức</a></li>
-              <li><a href="goi-tu-thien.html">Gói từ thiện</a></li>
-              <li><a href="contact.html">Liên hệ</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <!-- ----End Header---- -->
 
-      <!-- /*----Banner----*/ -->
-
-      <div id="banner" class="carousel slide" data-ride="carousel">
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/banner.jpg" alt="banner-1" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" alt="banner-2" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" alt="banner-3" />
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#banner" data-slide="prev">
-          <img src="images/Prev-btn.png" alt="prev" />
-        </a>
-        <a class="carousel-control-next" href="#banner" data-slide="next">
-          <img src="images/next-btn.png" alt="next" />
-        </a>
-      </div>
-      <!-- ----End Banner--- -->
-
-      <!-- ----Intro---- -->
-
-      <div id="intro">
-        <h3>
-          Giới thiệu chung
-        </h3>
-        <p>
-          <span id="span-1">NHỊP CẦU TỪ THIỆN</span> kết nối tấm lòng của rất
-          nhiều người với mong muốn <span>CHO ĐI</span> đến những mảnh đời,
-          những thân phận không may mắn <span>CẦN NHẬN</span> hỗ trợ trong cuộc
-          sống xung quanh chúng ta.
-        </p>
-        <a href="goi-thieu-chung.html">Xem thêm</a>
-      </div>
-      <!-- ----End Intro---- -->
-
-      <!-- /*----Registry----*/ -->
-      <div id="registry">
-        <a id="regis-1" href="dang-ky-trao.html">Đăng ký người tài trợ</a>
-        <a id="regis-2" href="dang-ky-nhan.html">Đăng ký người nhận tài trợ</a>
-      </div>
-      <!------End Registry---- -->
-
-      <!-- ----Field------>
-
-      <div id="field">
-        <div class="field-background">
-          <img src="images/linh-vuc-bg.jpg" alt="bg" />
-        </div>
-        <p>các đối tượng nhận từ thiện</p>
-        <div  id="field-item-1" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-1.png" alt="demo">
-          </div>
-          <div class="text-item">Vùng bị thiên tai nạn dịch</div>
-        </div>
-        <div  id="field-item-2" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-2-4.png" alt="demo">
-          </div>
-          <div class="text-item">Nhóm người cần hỗ trợ</div>
-        </div>
-        <div  id="field-item-3" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-3-5.png" alt="demo">
-          </div>
-          <div class="text-item">Trẻ em/Cá nhân cần bảo trợ</div>
-        </div>
-        <div  id="field-item-4" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-2-4.png" alt="demo">
-          </div>
-          <div class="text-item">Tổ chức cần giúp đỡ</div>
-        </div>
-        <div  id="field-item-5" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-3-5.png" alt="demo">
-          </div>
-          <div class="text-item">Quỹ từ thiện/Tổ chức hoạt động từ thiện</div>
-        </div>
-        <div  id="field-item-6" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-6-7.png" alt="demo">
-          </div>
-          <div class="text-item">Cá nhân gặp khó khăn</div>
-        </div>
-        <div  id="field-item-7" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-6-7.png" alt="demo">
-          </div>
-          <div class="text-item">Các bên khác</div>
-        </div>
-        <div  id="field-item-8" class="field-item">
-          <div class="img-item">
-            <img src="images/linh-vuc-1.png" alt="demo">
-          </div>
-          <div class="text-item">Gia đình/Nhóm người ruột thịt</div>
-        </div>
-        
-      </div>
-      <!------End Field------>
-
-      <!------New-1------>
-
-      <div id="news-1">
-        <div id="news-background">
-          <img src="images/news-bg.jpg" alt="news-bg" />
-        </div>
-        <div class="row news-content">
-          <div class="col-lg-7 col-md-7 col-sm-12 news-item-left">
-            <div class="row ">
-              <div class="col-lg-5 col-md-5 col-sm-3"></div>
-              <div class="news-item col-lg-7 col-md-7 col-sm-9">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-6">
-                    <img src="images/news-1.jpg" alt="news-1" />
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-6">
-                    <a href="#">
-                      <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
-                    </a>
-                    <span class="date">10/05/2017 07:57</span>
+        <div class="main p-0">
+            <!-- ---start-fixed-left-logo--- -->
+            <div class="fix-home-button">
+                <a href="#">
+                    <img src="images/logo-header.png" alt="home">
+                </a>
+            </div>
+            <!-- ---end-fixed-left-logo--- -->
+            <!-- -------messenger ------- -->
+            <div class="messenger">
+              messenger
+              <div id='fb-root'></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+              <div class='fb-customerchat'
+                attribution="wordpress"
+                page_id='111554506928605'
+                logged_in_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+                logged_out_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+                >
+            </div> 
+            </div> 
+            <!-- -------end-messenger------- -->
+            <!-- ---start-section-1--- -->
+            <section class="index-Section-1 positon-relative">
+                <div class="row m-0">
+                    <div class="col-12 p-0 m-0">
+                        <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---end-section-1--- -->
+            <!-- ---start-section-2--- -->
+            <section class="index-Section-2 text-center">
+                <div class="container">
+                    <h2>GIỚI THIỆU CHUNG</h2>
                     <p>
-                      Một mình ôm con trong bệnh viện, chị đau thắt lòng khi
-                      thấy con suốt ngày quấy khóc bởi khối u to căng mọng trên
-                      mặt chỉ chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành
-                      hạ...
+                    <strong>NHỊP CẦU TỪ THIỆN </strong> kết nối tấm lòng của rất nhiều người với mong muốn <strong>CHO ĐI</strong> đến những mảnh đời, những thân phận không may mắn <strong>CẦN NHẬN</strong> hỗ trợ trong cuộc sống xung quanh chúng ta.
                     </p>
-                  </div>
+                    <a class="btn rounded" href="https://nhipcaututhien.vn/gioi-thieu-chung/">Xem thêm</a>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-5 news-item-right">
-            <div class="news-item ">
+            </section>
+            <!-- ---end-section-2--- -->
+            <!-- ---start-section-3--- -->
+            <section class="index-Section-3 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 t">
+                            <a class="btn rounded" href="dang-ky-trao.html" >Đăng ký Người tài trợ</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn rounded" href="dang-ky-nhan.html" >Đăng ký Người nhận tài trợ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---end-section-3--- -->
+            <!-- ---start-section-4--- -->
+            <section class="index-Section-4">
+                <h3 class="w-100 text-center">các đối tượng nhận từ thiện</h3>
+                <div class="container">
+                    <div class="grid-container">
+                        <div class="grid-item item1">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/arms-around-3574596_1920.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Nhóm người cần hỗ trợ</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item item2">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/hand-1331323_1920.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Cá nhân găp khó khăn</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item item3">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/67878659_2415975065357388_4693058872544329728_n.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Vùng bị thiên tai nạn dịch</figcaption>
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="grid-item item4">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/poverty-1557128_1920.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Trẻ em / Cá nhân cần bảo vệ</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item item5">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/gia-dinh-ruot-thit-kho-khan.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Gia đình/Nhóm người ruột thịt</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item item6">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/to-chuc-can-giup-do.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Tổ chức cần giúp đỡ</figcaption>
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="grid-item item7">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/cac-ben-khac.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Các bên khác</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item item8">
+                            <a href="https://nhipcaututhien.vn/goi-tu-thien/">
+                                <figure>
+                                    <img src="images/quy-tu-thien-1024x576.jpg" alt="Trulli" style="width:100%">
+                                    <figcaption>Quỹ từ thiện/Tổ chức hoạt động từ thiện</figcaption>
+                                </figure>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <!-- ---end-section-4--- -->
+            <!-- ---start-section-5--- -->
+            <section class="index-Section-5">
+                <a id="more-view" href="https://nhipcaututhien.vn/tin-tuc/">Xem thêm
+                    <i class="fa fa-angle-double-right"></i>
+                </a>
+                <div id="news">
+                    <a href=""><p>Tin tức</p></a>
+                </div>
+               <div class="container-fuild">
+                <div class="row justify-content-center" style="">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="">
+                                    <img class="mb-2" src="https://media1.nguoiduatin.vn/media/le-nham-than/2019/11/25/tu-thien.jpg">
+                                    <p><strong>ĐÀ NẴNG: KHÁM, CẤP THUỐC MIỄN PHÍ CHO NGƯỜI CÓ HOÀN CẢNH KHÓ KHĂN</strong></p>
+                                </a>
+                                <p style="color:#ccc;">2019-08-04T14:03:12</p>
+                                <p>Qua những hoạt động này, người dân Hòa Phú cải thiện chất lượng cuộc sống, cuộc sống khỏe mạnh. Đồng thời, góp phần tạo điều kiện …</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <img src="https://media1.nguoiduatin.vn/media/pham-trong-tung/2019/11/24/tu-thien1.jpg" alt="">
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="https://media1.nguoiduatin.vn/media/luong-quoc-tiep/2019/11/24/nhung-quan-com-dong-am-tinh-nguoi5.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href=""><p><strong>HÀ GIANG: TRẺ EM NÀ BÓ HÁO HỨC CHỜ ĐÓN TRƯỜNG MỚI KHANG TRANG</strong></p></a>
+                                        <p style="color:#ccc;"> 2019-08-04T14:02:51</p>
+                                        <p>Ở nơi vùng núi cao Tây Bắc xa xôi, dù trời nắng nóng hay mưa gió bão bùng, con trẻ vẫn chăm chỉ đôi chân trần trên sỏi đá, trèo đèo lội suối, khó khăn gian khổ…</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href=""><p><strong>NHỮNG QUÁN CƠM 0 ĐỒNG ẤM TÌNH NGƯỜI</strong></p></a>
+                                        <p style="color:#ccc;">2019-08-03T10:10:20</p>
+                                        <p>Sự đón tiếp nhiệt tình của các thành viên những quán cơm 0 đồng khiến cho khách đến ăn có tâm thế thoải mái, không bị mặc cảm vì ăn đồ miễn phí, không phải trả tiền.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>    
+            </section>
+            <!-- ---end-section-5--- -->
+            <!-- ---start-section-6--- -->
+            <section class="index-Section-6">
               <div class="row">
-                <div class="col-lg-6  ">
-                  <img src="images/news-2.jpg" alt="news-2" />
+                <div class="col-5">
+                    <h5>Đăng ký trở thành người đồng hành</h5>
+                    <form>
+                    <div class="form-group">
+                        <input type="name" size="40" class="form-control" id="input-Name" placeholder="Họ và tên*">
+                    </div>
+                    <div class="form-group">
+                        <input type="phone" size="40" class="form-control" id="input-Phone" placeholder="Số điện thoại*">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="content" cols="40" rows="10" aria-invalid="false" placeholder="Nội dung" style="width: 100%;"></textarea>
+                    </div>
+                    <a href="" class="btn btn-primary rounded pl-5 pr-5">Gửi</a>
+                    </form>
                 </div>
-                <div class="col-lg-6">
-                  <a href="#">
-                    <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
-                  </a>
-                  <span class="date">10/05/2017 07:57</span>
-                  <p>
-                    Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
-                    con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
-                    chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
-                  </p>
+                <div class="col-7">
+                    <div class="story">
+                        <h3>Câu chuyện của chúng tôi</h3>
+                        <p>Trong xã hội hiện nay vẫn còn rất nhiều những hoàn cảnh, những mảnh đời khó khăn cần được giúp đỡ. Mỗi ngày, vẫn có những nhà hảo tâm, những người tốt mang những yêu thương đi sẻ chia cho những số phận đó. Đó là hoạt động từ thiện – một trong những hoạt động tích cực đang được lan rộng hiện nay. NHỊP CẦU TỪ THIỆN – kết nối Những nhà hảo tâm, người tốt (Người tài trợ) với những hoàn cảnh, mảnh đời khó khăn (Người nhận tài trợ) vì Cuộc đời luôn tràn ngập ý nghĩa khi yêu thương và sẻ chia!</p>
+                    </div>
+                    <a href="https://nhipcaututhien.vn/cau-chuyen-cua-chung-toi/" class="btn btn-primary btn_xemthem-right rounded">Xem thêm</a>
+                </div>     
                 </div>
-              </div>
-            </div>
-            <div id="right-2" class="news-item mt-5">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img src="images/news-3.jpg" alt="news-2" />
+            </section>
+            <!-- ---end-section-6--- -->
+            <!-- ---start-section-7--- -->
+            <section class="index-Section-7">
+                <div class="row">
+                    <div class="col-6">
+                        <div id="bg_index-img" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://nhipcaututhien.vn/wp-content/uploads/2020/01/Thu-vien-anh-1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://nhipcaututhien.vn/wp-content/uploads/2020/01/Thu-vien-anh-2.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://nhipcaututhien.vn/wp-content/uploads/2020/01/Thu-vien-anh-3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://nhipcaututhien.vn/wp-content/uploads/2020/01/Thu-vien-anh-4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#bg_index-img" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#bg_index-img" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="bg_index-video" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <iframe width="100%" height="280" src="https://www.youtube.com/embed/-ImHO1_3wzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                <iframe width="100%" height="280" src="https://www.youtube.com/embed/UfEmLdv0eBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                <iframe width="100%" height="280" src="https://www.youtube.com/embed/klCUG4-NOcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#bg_index-video" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#bg_index-video" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <a href="#">
-                    <h5>Nghẹn lòng cậu bé ung thư bị biến dạng khuôn mặt</h5>
-                  </a>
-                  <span class="date">10/05/2017 07:57</span>
-                  <p>
-                    Một mình ôm con trong bệnh viện, chị đau thắt lòng khi thấy
-                    con suốt ngày quấy khóc bởi khối u to căng mọng trên mặt chỉ
-                    chực vỡ bất cứ lúc nào. Nhiều đên các cơn sốt hành hạ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </section>
+            <!-- ---end-section-7--- -->
         </div>
-        <a id="more-view" href="news.html"
-          >Xem thêm
-          <i class="fas fa-angle-double-right"></i>
-        </a>
-      </div>
-      <!------End New-1------>
-
-      <!------Send-info------>
-
-      <div id="send-info">
-        <div id="send-info-bg">
-          <img src="images/gui-thong-tin-bg.jpg" alt="send-info-bg" />
-        </div>
-        <div class="row send-info-content">
-          <div id="form-info" class="col-lg-5 col-md-5 col-sm-5">
-            <h5>Liên hệ với chúng tôi</h5>
-            <form action="#">
-              <input type="text" placeholder="Họ và Tên" />
-              <input type="text" placeholder="Số điện thoại" />
-              <input type="text" placeholder="Email" />
-              <textarea
-                name="mess"
-                id="mess"
-                placeholder="Lời nhắn của bạn"
-              ></textarea>
-              <input id="send-form" type="submit" value="Gửi" />
-            </form>
-          </div>
-          <div id="story" class="col-lg-7 col-md-7 col-sm-7">
-            <h3>Câu chuyện của chúng tôi</h3>
-            <p>
-              Trong xã hội hiện nay vẫn còn rất nhiều những hoàn cảnh, những
-              mảnh đời khó khăn cần được giúp đỡ. Mỗi ngày, vẫn có những nhà hảo
-              tâm, những người tốt mang những yêu thương đi sẻ chia cho những số
-              phận đó. Đó là hoạt động từ thiện – một trong những hoạt động tích
-              cực đang được lan rộng hiện nay. <span>NHỊP CẦU TỪ THIỆN </span>–
-              kết nối Những nhà hảo tâm, người tốt (Người tài trợ) với những
-              hoàn cảnh, mảnh đời khó khăn (Người nhận tài trợ) vì Cuộc đời luôn
-              tràn ngập ý nghĩa khi yêu thương và sẻ chia!
-            </p>
-            <a href="our-story.html">Xem thêm</a>
-          </div>
-        </div>
-      </div>
-      <!------End Send-info------>
-
-      <!------Partner------>
-
-      <div id="partner">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-1.png" alt="partner-1" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-2.png" alt="partner-2" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-3.png" alt="partner-3" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-4.png" alt="partner-4" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-5.png" alt="partner-5" />
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img src="images/doi-tac-6.png" alt="partner-6" />
-          </div>
-        </div>
-      </div>
-
-      <!------End Partner------>
-
       <!------Footer---- -->
-
       <div id="footer">
-        <div class="row">
-          <div class="img-footer col-lg-5 col-md-5 col-sm-6">
-            <img id="footer-img" src="images/img-footer.jpg" alt="img-footer" />
-          </div>
-          <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
-            <h4>LIÊN HỆ</h4>
-            <p>
-              Địa chỉ: 187 Nguyễn Tuân, Phường Nhân Chính, Quận thanh Xuân,
-              Thành phố Hà Nội.
-            </p>
-            <p>Email: NCTT@gmail.com;</p>
-            <p>Fanpage:</p>
-            <p>Website:</p>
-            <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
-            <div class="social">
-              <a href="#"
-                ><img class="social-item" src="images/fb-icon.png" alt="fb"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/mail-icon.png" alt="mail"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/mess-icon.png" alt="mess"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/zalo-icon.png" alt="zalo"
-              /></a>
-              <a href="#"
-                ><img class="social-item" src="images/bank-icon.png" alt="bank"
-              /></a>
+          <div class="row">
+            <div class="contact-info col-lg-5 pr-5 col-md-5 col-sm-6">
+              <h4>LIÊN HỆ</h4>
+              <p><strong>Công Ty CP Kỹ Thuật Môi Trường Và Xây Dựng VINACEE Việt Nam</strong></p>
+              <p>Phòng 412, Nơ 9, KĐT Pháp Vân,
+                quận Hoàng Mai, Hà Nội</p>
+                <p>Email: <a class="text-is-email" href="mailto:nhipcaututhienvn@gmail.com">nhipcaututhienvn@gmail.com</a></p>
+                <p>Fanpage: <a href="https://www.facebook.com/Nh%E1%BB%8Bp-c%E1%BA%A7u-t%E1%BB%AB-thi%E1%BB%87n-111554506928605/" target="_blank" rel="noopener noreferrer">Nhịp Cầu Từ Thiện</a></p>
+                <p>Website: <a href="https://nhipcaututhien.vn/">nhipcaututhien.vn</a></p>
+                <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
+              <h4>Tìm Chúng Tôi</h4>
+              <div class="social">
+                <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/facebook.png" alt="fb"></a><br>
+                <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/gmail.png" alt="gmail"></a>
+                <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/11/messenger.png" alt="mess"></a>
+                <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/08/zalo-icon.png" alt="zalo"></a>
+                <a href="#"><img class="social-item " src="https://nhipcaututhien.vn/wp-content/uploads/2019/08/bank-icon.png" alt="bank"></a>
+            </div>
+            </div>
+            <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+              <a href="index.html">Trang chủ</a>
+              <a href="about.html">Về chúng tôi</a>
+              <a href="partner.html">Đối tác</a>
+              <a href="news.html">Tin tức</a>
+              <a href="contact.html">Liên hệ</a>
+            </div>
+            <div class="img-footer col-lg-5 col-md-5 col-sm-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7451.844712167416!2d105.84678100000001!3d20.955633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb083b1a40f8a2743!2zVMOyYSAwOSAtIEtodSDEkcO0IHRo4buLIHBow6FwIHbDom4gLSBU4bupIEhp4buHcCAtIFBoxrDhu51uZyBIb8OgbmcgTGnhu4d0IC0gUS5Ib8OgbmcgTWFpIC0gSE4u!5e0!3m2!1svi!2sus!4v1592035960988!5m2!1svi!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
-          <div class="link-footer col-lg-2 col-md-2 col-sm-12">
-            <a href="index.html">Trang chủ</a>
-            <a href="about.html">Về chúng tôi</a>
-            <a href="hay-tham-gia.html">Hãy tham gia</a>
-            <a href="partner.html">Đối tác</a>
-            <a href="news.html">Tin tức</a>
-            <a href="goi-tu-thien.html">Gói từ thiện</a>
-            <a href="contact.html">Liên hệ</a>
-          </div>
         </div>
-      </div>
       <!------End Footer------>
     </div>
 
@@ -399,6 +436,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
