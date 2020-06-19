@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="Plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="Plugin/slick/slick-theme.css"/>
     <title>Từ trái tim đến trái tim</title>
   </head>
   
@@ -98,6 +101,7 @@
                 <li><a href="contact.html">Liên hệ</a></li>
               </ul>
             </div>
+            <script src="js/menuActiveTab.js"></script>
           </div>
         </div>
       <!-- ----End Header---- -->
@@ -131,22 +135,16 @@
             <!-- -------end-messenger------- -->
             <!-- ---start-section-1--- -->
             <section class="index-Section-1 positon-relative">
-                <div class="row m-0">
-                    <div class="col-12 p-0 m-0">
-                        <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="3000">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                  <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                          </div>
-                    </div>
+                <div id="index-slick" class="row m-0">
+                  <div class="col-12 p-0">
+                    <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-12 p-0">
+                    <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-12 p-0">
+                    <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
             </section>
             <!-- ---end-section-1--- -->
@@ -432,8 +430,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="Plugin/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
 </body>
 
 </html>

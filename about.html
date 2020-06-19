@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="Plugin/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="Plugin/slick/slick-theme.css"/>
     <title>Từ trái tim đến trái tim</title>
   </head>
   <body>
@@ -96,6 +99,7 @@
               <li><a href="contact.html">Liên hệ</a></li>
             </ul>
           </div>
+          <script src="js/menuActiveTab.js"></script>
         </div>
       </div>
     <!-- ----End Header---- -->
@@ -132,50 +136,95 @@
       <!-- -----end-about-banner----- -->
       <!-- ----start-about-main---- -->
       <div id="about-main">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-4">
-            <ul>
-              <li><a href="#"></a>
+            <ul id="about_tab-control">
+              <li><a id="tab-1"class="tablinks">
                 <p>Chúng tôi là ai</p>
-                <img src="images/we-icon.png" alt=""></li>
-              <li><a href="#"></a>
+                <img src="images/we-icon.png" alt="">
+              </a>
+                </li>
+              <li><a id="tab-2" class="tablinks" >
                 <p>Sứ mệnh</p>
-                <img src="images/we-icon.png" alt=""></li>
-              <li><a href="#"></a>
+                <img src="images/we-icon.png" alt="">
+              </a>
+                </li>
+              <li><a id="tab-3" class="tablinks">
                 <p>Tầm nhìn</p>
-                <img src="images/we-icon.png" alt=""></li>
-              <li><a href="#"></a>
+                <img src="images/we-icon.png" alt="">
+              </a>
+              </li>
+              <li><a id="tab-4" class="tablinks" >
                 <p>Giá trị cốt lõi</p>
-                <img src="images/we-icon.png" alt=""></li>
-              <li><a href="#"></a>
+                <img src="images/we-icon.png" alt="">
+              </a>
+                </li>
+              <li><a id="tab-5" class="tablinks">
                 <p>Mục tiêu</p>
-                <img src="images/we-icon.png" alt=""></li>
+                <img src="images/we-icon.png" alt="">
+              </a>
+              </li>
             </ul>
           </div>
-          <div class="col-8"></div>
+          <div class="col-8">
+            <div id="about_tab-content">
+              <div id="tab1" class="tabcontent">
+                <h3>Chúng tôi là ai</h3>
+                <p>Chúng tôi luôn đồng hành cùng các bạn, là cầu nối chuyên nghiệp, tận tâm và trao lợi
+                    ích giữa người trao từ thiện và người nhận từ thiện, mang đến cho tất cả các bên cơ
+                    hội chia sẻ, đồng cảm và kết nối phù hợp với nhu cầu và hoàn cảnh.<br><br></p>
+            </div>
+            <div id="tab2" class="tabcontent">
+              <h3>Sứ mệnh</h3>
+              <p>Chúng tôi là cầu nối chuyên nghiệp, tận tâm, tạo giá trị vượt trội cho Quá trình Trao
+                  – Nhận từ thiện. Chia sẻ yêu thương và khơi gợi tinh thần “dám cho đi” của tất cả
+                  chúng ta, mang trái tim của tất cả con người trên thế giới về bên nhau gần nhất có
+                  thể.<br><br></p>
+          </div>
+          <div id="tab3" class="tabcontent">
+            <h3>Tầm nhìn</h3>
+            <p><br>
+                – Trở thành Nhà tổ chức các Hoạt động và Sự kiện từ thiện thành công và giá trị khác
+                biệt nhất Việt Nam và thế giới!<br>
+                – Trở thành cầu nối ngắn nhất giữa Trái tim đến Trái tim và từ Trái tim đến Cuộc
+                sống!
+                <br><br></p>
+        </div>
+        <div id="tab4" class="tabcontent">
+          <h3>Giá trị cốt lõi</h3>
+          <p><br>
+              – Lợi ích trung thực<br>
+              – Chuyên nghiệp<br>
+              – Giàu tính nhân văn và lòng nhân ái<br>
+              – Mang lại giá trị đích thực cho các đối tác được kết nối<br>
+              – Nâng cao tinh thần sẻ chia từ trái tim và trao giá trị cho cuộc sống cộng đồng
+              <br><br></p>
+      </div>
+      <div id="tab5" class="tabcontent">
+        <h3>Mục tiêu</h3>
+        <p>Chúng tôi luôn đồng hành cùng các bạn, là cầu nối chuyên nghiệp, tận tâm và trao lợi
+            ích giữa người trao từ thiện và người nhận từ thiện, mang đến cho tất cả các bên cơ
+            hội chia sẻ, đồng cảm và kết nối phù hợp với nhu cầu và hoàn cảnh.<br><br></p>
+    </div>
+            </div>
+          </div>
         </div>
       </div>
+      <script src="js/aboutTab.js"></script>
       <!-- ----end-about-main---- -->
-      <!-- ---start-section-1--- -->
-      <section class="index-Section-1 positon-relative">
-        <h2 class="mb-3 our-team-title" style="text-align: center; font-size: 32px; font-family: Open;">Đội ngũ của chúng tôi</h2>
-        <div class="row m-0">
-            <div class="col-12 p-0 m-0">
-                <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="3000">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/banner.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
+         <!-- ---start-section-1--- -->
+         <section class="index-Section-1 positon-relative">
+          <div id="index-slick" class="row m-0">
+            <div class="col-12 p-0">
+              <img src="images/banner.jpg" class="d-block w-100" alt="...">
             </div>
-        </div>
+            <div class="col-12 p-0">
+              <img src="images/banner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 p-0">
+              <img src="images/banner.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
       </section>
       <!-- ---end-section-1--- -->
       </div>
@@ -232,6 +281,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="Plugin/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
   </body>
 </html>
