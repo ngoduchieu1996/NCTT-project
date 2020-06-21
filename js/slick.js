@@ -1,4 +1,13 @@
-
+// banner-slick
+$(document).ready(function(){
+    $('#index-slick').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed:3000,
+    });
+});
 // --partner-show-all--
 $(document).ready(function(){
 $('.showAll').slick({
