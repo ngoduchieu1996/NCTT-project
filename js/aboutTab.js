@@ -30,28 +30,3 @@ document.getElementById("tab-5").onclick = function(event) {
 }
 
 document.getElementById("tab-1").click();
-
-//     var tablinks = document.getElementsByClassName('tablinks');
-//     var contents = document.getElementsByClassName('tabcontent');
-//     function showContent(id){
-//         for (var i = 0; i < contents.length; i++) {
-//             contents[i].style.display = 'none';
-//         }
-//         var content = document.getElementById(id);
-//         content.style.display = 'block';
-//     }
-//     for (var i = 0; i < tablinks.length; i++) {
-//         tablinks[i].addEventListener("click", function(){
-//             var id = this.textContent;
-//             for (var i = 0; i < tablinks.length; i++) {
-//                 tablinks[i].classList.remove("active");
-//             }
-//             this.className += " active";
-//             showContent(id);
-//         });
-//     }
-//     showContent('tab1').click;
-//     showContent('tab2').onclick;
-//     showContent('tab3').onclick;
-//     showContent('tab4').onclick;
-//     showContent('tab5').onclick;

@@ -658,6 +658,9 @@ h2.bg-section-title::after {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+#partner_section-2{
+  padding: 0 15px 15px 15px;
+}
 #partner_section-2 img{
   width: 50%;
 }
@@ -669,15 +672,20 @@ h2.bg-section-title::after {
 }
 #partner_section-2 .partner_slick-items{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     min-height: 120px;
+    flex-direction: column;
 }
-#partner_section-2 .showAll{
+#partner_section-2 .tab_content-edit{
   padding: 0 10%;
 }
-
+#partner_section-2 .client-content p{
+ margin: 0;
+}
+#partner_section-2 .client-content a{
+  color: red;
+ }
 /*----End Partner----*/
 /*----Footer----*/
 #footer {
@@ -3088,9 +3096,82 @@ background-size: cover;
 /* ----start-partner---- */
 #partner-banner{
   background-image: url(../images/banner-partner.jpg);
-  min-height:250px ;
+  /* min-height:250px ; */
   background-size: cover;
 }
+/* ---start-partner-section-1--- */
+#partner_tab-1 .tabs{
+  display: flex;
+  padding: 0;
+}
+#partner_tab-1 .title{
+  margin: 0;
+}
+#partner_tab-1 ul li{
+  flex-basis: 33.33%;
+  list-style: none;
+}
+#partner_tab-1 ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+#partner_tab-1 ul a:hover p{
+  color: red;
+}
+#partner_tab-1 ul li img{
+  width: 40%;
+}
+#partner_tab-1 .tab_item{
+  background-color: white;
+    align-items: center;
+    margin: 40px 3% 20px 3%;
+}
+#partner_tab-1 .loi-ich-item{
+  display: grid;
+    grid-template-columns: 1fr 30fr;
+    padding-bottom: 10px;
+}
+/* ---end-partner-section-1--- */
+/* ---start-partner-section-2--- */
+#partner_tab-2 {
+  padding: 0;
+}
+#partner_tab-2 .tabs{
+  padding: 0 10%;
+}
+#partner_tab-2 ul{
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  justify-content: center;
+}
+#partner_tab-2 button{
+  color:#0b4978;
+  border: none;
+  background-color:transparent;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 16px;
+  font-weight: bold;
+  border-radius: 40px;
+  outline:none;
+  min-width: 100px;
+}
+#partner_tab-2 .partner_tab2-active{
+  background-color: #0364AE;
+  color: white;
+}
+#partner_tab-2 .slick-arrow{
+    color:black;
+    top: 30%;
+    position: absolute;
+}
+
+/* ---end-partner-section-2--- */
 /* ----end-partner---- */
 
 /* ----start-news-banner---- */
