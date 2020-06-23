@@ -2801,6 +2801,8 @@ body{
   width: 200px;
   height: 87px;
   clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
+  cursor: pointer;
+  z-index: 9999;
 }
 .index-Section-5 #news a p{
   position: absolute;

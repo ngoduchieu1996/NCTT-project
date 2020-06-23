@@ -1,4 +1,3 @@
-
 // start-mainActive-tab
 $(document).ready(function(){
     function menuActiveTab(){
