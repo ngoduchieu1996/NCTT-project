@@ -3103,7 +3103,7 @@ background-size: cover;
 /* ----start-partner---- */
 #partner-banner{
   background-image: url(../images/banner-partner.jpg);
-  /* min-height:250px ; */
+  min-height:250px ;
   background-size: cover;
 }
 /* ---start-partner-section-1--- */
