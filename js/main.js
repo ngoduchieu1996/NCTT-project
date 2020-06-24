@@ -18,11 +18,11 @@ $(document).ready(function(){
 // banner-slick
 $(document).ready(function(){
     $('#index-slick').slick({
-        infinite: true,
-        slidesToShow: 1,
+        infinite      : true,
+        slidesToShow  : 1,
         slidesToScroll: 1,
-        autoplay:true,
-        autoplaySpeed:3000,
+        autoplay      : true,
+        autoplaySpeed : 3000,
     });
 });
 // end-banner-slick
@@ -129,11 +129,11 @@ $(document).ready(function() {
 // --partner-show-all--
 $(document).ready(function(){
     $('.showAll').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    infinite          : true,
+    slidesToShow      : 5,
+    slidesToScroll    : 2,
+    prevArrow         : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+    nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
     });
     // --end-partner-show-all--
@@ -141,11 +141,11 @@ $(document).ready(function(){
     // --partner-tai-chinhl--
     $(document).ready(function(){
         $('.taiChinh').slick({
-        infinite: true,
-        slidesToShow: 5,
+        infinite      : true,
+        slidesToShow  : 5,
         slidesToScroll: 2,
-        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+        prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+    nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
         });
     });
     
@@ -153,48 +153,48 @@ $(document).ready(function(){
     // --partner-hanghoa--
 $(document).ready(function(){
     $('.hangHoa').slick({
-    infinite: true,
-    slidesToShow: 5,
+    infinite      : true,
+    slidesToShow  : 5,
     slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
 });
 $(document).ready(function(){
     $('.toChuc').slick({
-    infinite: true,
-    slidesToShow: 5,
+    infinite      : true,
+    slidesToShow  : 5,
     slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
 });
 $(document).ready(function(){
     $('.dongHanh').slick({
-    infinite: true,
-    slidesToShow: 5,
+    infinite      : true,
+    slidesToShow  : 5,
     slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
 });
 
 $(document).ready(function(){
     $('.truyenThong').slick({
-    infinite: true,
-    slidesToShow: 5,
+    infinite      : true,
+    slidesToShow  : 5,
     slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
 });
 $(document).ready(function(){
     $('.khac').slick({
-    infinite: true,
-    slidesToShow: 5,
+    infinite      : true,
+    slidesToShow  : 5,
     slidesToScroll: 2,
-    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></button>',
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></button>',
+    prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
+    nextArrow     : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
     });
 });
 
@@ -327,25 +327,25 @@ $(document).ready(function() {
 // -----end news tab----
 $(document).ready(function(){
     $('#goi_tu-thien .goituthien').slick({
-    infinite: true,
-    slidesToShow: 3,
+    infinite      : true,
+    slidesToShow  : 3,
     slidesToScroll: 2,
-    autoplay:true,
-    autoplaySpeed:3000,
-    prevArrow: '<button class="" aria-label="Previous" type="button" style="background: transparent;border: none;position: absolute;top: 30%;color: white;left: -2%;;outline: none;transform: translateY(-50%);"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></button>',
-    nextArrow: '<button class="" aria-label="Previous" type="button" style="background: transparent;border: none;position: absolute;top: 30%;color: white;right:-2%;outline: none;transform: translateY(-50%);"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></button>',
+    autoplay      : true,
+    autoplaySpeed : 3000,
+    prevArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: white;left : -2%;;outline: none;transform: translateY(-50%);"><i class = "fa fa-angle-left fa-3x" aria-hidden  = "true"></i></button>',
+    nextArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: white;right: -2%;outline : none;transform: translateY(-50%);"><i class = "fa fa-angle-right fa-3x" aria-hidden = "true"></i></button>',
     });
     });
 
 $(document).ready(function(){
     $('.news_aboutus').slick({
-        infinite:true,
-        slidesToShow:3,
-        slidesToScroll:2,
-        autoplay:true,
-        autoplaySpeed:3000,
-        prevArrow: '<button class="" aria-label="Previous" type="button" style="background: transparent;border: none;position: absolute;top: 30%;color: black;left: -2%;;outline: none;transform: translateY(-50%);"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></button>',
-        nextArrow: '<button class="" aria-label="Previous" type="button" style="background: transparent;border: none;position: absolute;top: 30%;color: black;right:-2%;outline: none;transform: translateY(-50%);"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></button>',
+        infinite      : true,
+        slidesToShow  : 3,
+        slidesToScroll: 2,
+        autoplay      : true,
+        autoplaySpeed : 3000,
+        prevArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: black;left : -2%;;outline: none;transform: translateY(-50%);"><i class = "fa fa-angle-left fa-3x" aria-hidden  = "true"></i></button>',
+        nextArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: black;right: -2%;outline : none;transform: translateY(-50%);"><i class = "fa fa-angle-right fa-3x" aria-hidden = "true"></i></button>',
     });
 });
 // --end -trang news---

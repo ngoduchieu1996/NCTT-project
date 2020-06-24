@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/responsive.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="scss/bootstrap-4-3-1.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="Plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="Plugin/slick/slick-theme.css"/>
+    <title>Từ trái tim đến trái tim</title>
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <!-- ----Header--- -->
+
+      <div id="header">
+          <div class="row">
+            <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
+              <a href="index.html"><img src="images/logo-header.png" alt="logo" /></a>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-8 justify-content-center">
+              <a href="index.html" style="background-color: transparent;"><h4>Từ trái tim đến trái tim</h4></a>
+            </div>
+            <div id="header-left" class="col-lg-5 col-md-5 col-sm-12 p-0">
+              <input type="text" value="" placeholder="Tìm kiếm" />
+              <a id="search" class="ml-2 mr-2 pl-3 pr-3">
+                <img src="images/search-icon-origin.png" alt="search-icon" />
+              </a>
+              <a class = "mr-2 rounded pl-2 pr-2 login_hover-form" href="#">
+                  <!-- ---login--- -->
+                  <form class="form-login">
+                    <div class="form-group">
+                        <label for="Email1">Tên người dùng hoặc Địa chỉ</label>
+                      <label for="Email1">Email</label>
+                      <input type="email" class="form-control" id="InputEmail1" >
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Mật khẩu</label>
+                      <input type="password" class="form-control"  id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Tự động đăng nhập  
+                        </label>
+                      </div>
+                    <button type="submit" class="btn btn-color">Đăng nhập</button>
+                  </form>
+                 <!-- ---login--- -->
+                 <div class="form_login-icon">
+                  <i class="fa fa-user"></i>Login
+                 </div>
+               
+            </a>
+              <a id="language">
+                <img src="images/vn-icon.png" alt="vn-icon" />
+              </a>
+            </div>
+          </div>
+          <ul id="nav-header">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="partner.html">Đối tác</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+          <div id="nav-header-collapse">
+            <nav class="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse"
+                aria-controls="collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </nav>
+            <div class="collapse" id="collapse">
+              <ul id="nav-collapse">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="partner.html">Đối tác</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!-- ----End Header---- -->
+
+        <div class="main p-0">
+            <!-- ---start-fixed-left-logo--- -->
+            <div class="fix-home-button">
+                <a href="#">
+                    <img src="images/logo-header.png" alt="home">
+                </a>
+            </div>
+            <!-- ---end-fixed-left-logo--- -->
+            <!-- -------messenger ------- -->
+            <div class="messenger">
+              messenger
+              <div id='fb-root'></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+              <div class='fb-customerchat'
+                attribution="wordpress"
+                page_id='111554506928605'
+                logged_in_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+                logged_out_greeting='Xin chào? Bạn cần chúng tôi hỗ trợ gì không?'
+                >
+            </div> 
+            </div> 
+            <!-- -------end-messenger------- -->
+            <!--start banner-->
+            <div id="hay-tham-gia-banner">
+            </div>
+            <!--end banner-->
+            <!--start hay-tham-gia-->
+            <section id="hay-tham-gia">
+                <div class="hay-tham-gia-title">
+                    <h4>Hãy tham gia</h4>
+                    <p>Tạo phong cách tận tâm và giá trị vượt trội cho Quá trình Trao – Nhận từ thiện. Chia sẻ yêu thương và khơi gợi tinh thần “dám cho đi” của tất cả chúng ta. Mang trái tim con người ở khắp nơi trên thế giới về bên nhau gần nhất có thể!<br></p>
+                </div>
+                <div class="hay-tham-gia-content">
+                   <div class="hay-tham-gia-content-item">
+                    <img src="images/nguoi-tai-tro-icon-haythamgia.png" alt="" >
+                    <div class="title">
+                        <h5>người tài trợ</h5>
+                        <p>Hãy lan tỏa, hãy san sẻ hạnh phúc, tình yêu và tấm lòng của mình tới những người thật sự đang cần giúp đỡ</p>
+                    </div>
+                    <a href="dang-ky-trao.html">Đăng ký</a>
+                   </div>
+                   <div class="hay-tham-gia-content-item">
+                    <img src="images/nguoi-nhan-tai-tro-icon.png" alt="" >
+                    <div class="title">
+                        <h5>NGƯỜI NHẬN TÀI TRỢ</h5>
+                        <p>Cá nhân, gia đình, tổ chức đang cần được giúp đỡ giờ.</p>
+                    </div>
+                    <a href="dang-ky-nhan.html">Đăng ký</a>
+                   </div>
+                   <div class="hay-tham-gia-content-item">
+                    <img src="images/truc-tiep-trao-icon.png" alt="" >
+                    <div class="title">
+                        <h5>TÀI TRỢ TRỰC TIẾP</h5>
+                        <p>Bạn có thể đóng góp trực tiếp đến Nhịp cầu từ thiện ngay bây giờ.</p>
+                    </div>
+                    <a href="contact.html">Đăng ký</a>
+                   </div>
+                   <div class="hay-tham-gia-content-item">
+                    <img src="images/chi-muon-lien-he-icon.png" alt="" >
+                    <div class="title">
+                        <h5>CHỈ MUỐN TRAO ĐỔI</h5>
+                        <p>Bạn chia sẻ điều quan tâm và lời nhắn nhủ đến Nhịp cầu từ thiện.</p>
+                    </div>
+                    <a href="dang-ky-trao.html">Liên hệ</a>
+                   </div>
+                </div>
+            </section>
+            <!--end hay-tham-gia-->
+            <section id="tro-thanh-nguoi-tai-tro">
+                <div class="tro-thanh-nguoi-tai-tro-title">
+                    <img src="images/become-icon-1.png" alt="">
+                    <div class="tro-thanh-nguoi-tai-tro-title-text">
+                        <h4>TRỞ THÀNH NGƯỜI TÀI TRỢ</h4>
+                        <p>Hãy cho đi để nhận lại hạnh phúc cho mình</p>
+                    </div>
+                </div>
+                <div class="quy-trinh">
+                    <div class="quy-trinh-item-1">
+                        <h5>1</h5>
+                        <p>Điền thông tin đăng ký để tạo tài khoản Người tài trợ</p>
+                        <a href="https://nhipcaututhien.vn/dang-ky-trao/">Đăng ký</a>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- end main -->
+ 
+      <!------Footer---- -->
+      <div id="footer">
+          <div class="row">
+            <div class="contact-info col-lg-4 col-md-5 col-sm-6">
+              <h4>LIÊN HỆ</h4>
+              <p><strong>Công Ty CP Kỹ Thuật Môi Trường Và Xây Dựng VINACEE Việt Nam</strong></p>
+              <p>Phòng 412, Nơ 9, KĐT Pháp Vân,
+                quận Hoàng Mai, Hà Nội</p>
+                <p>Email: <a class="text-is-email" href="mailto:nhipcaututhienvn@gmail.com">nhipcaututhienvn@gmail.com</a></p>
+                <p>Fanpage: <a href="https://www.facebook.com/Nh%E1%BB%8Bp-c%E1%BA%A7u-t%E1%BB%AB-thi%E1%BB%87n-111554506928605/" target="_blank" rel="noopener noreferrer">Nhịp Cầu Từ Thiện</a></p>
+                <p>Website: <a href="https://nhipcaututhien.vn/">nhipcaututhien.vn</a></p>
+                <p>Tel: 024 3537 8620 - Fax: 024 3537 8623</p>
+              <h4>Tìm Chúng Tôi</h4>
+              <div class="social">
+                <a href="#"><img class="social-item " src="images/facebook.png" alt="fb"></a>
+                <a href="#"><img class="social-item " src="images/gmail.png" alt="gmail"></a>
+                <a href="#"><img class="social-item " src="images/messenger.png" alt="mess"></a>
+                <a href="#"><img class="social-item " src="images/Logo_Zalo.png" alt="zalo"></a>
+                <a href="#"><img class="social-item " src="images/bank-icon.png" alt="bank"></a>
+            </div>
+            </div>
+            <div class="link-footer col-lg-2 col-md-2 col-sm-12">
+              <a href="index.html">Trang chủ</a>
+              <a href="about.html">Về chúng tôi</a>
+              <a href="partner.html">Đối tác</a>
+              <a href="news.html">Tin tức</a>
+              <a href="contact.html">Liên hệ</a>
+            </div>
+            <div class="img-footer col-lg-6 col-md-5 col-sm-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7451.844712167416!2d105.84678100000001!3d20.955633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb083b1a40f8a2743!2zVMOyYSAwOSAtIEtodSDEkcO0IHRo4buLIHBow6FwIHbDom4gLSBU4bupIEhp4buHcCAtIFBoxrDhu51uZyBIb8OgbmcgTGnhu4d0IC0gUS5Ib8OgbmcgTWFpIC0gSE4u!5e0!3m2!1svi!2sus!4v1592035960988!5m2!1svi!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      <!------End Footer------>
+    <!------End Footer------>
+    </div>
+  <!-- Script -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Plugin/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
