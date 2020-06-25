@@ -43,17 +43,35 @@ $(document).ready(function(){
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    document.getElementById("loi-ich-tab1").onclick = function(event) {
-        openTab(event, 'loi-ich-content-1');
-        
+    let loiich1 = document.getElementById("loi-ich-tab1");
+    if (loiich1){
+        loiich1.onclick=function(event) {
+            openTab(event, 'loi-ich-content-1'); 
+        }
+        loiich1.click();  
     }
-    document.getElementById("loi-ich-tab2").onclick = function(event) {
-        openTab(event, 'loi-ich-content-2');
+    // document.getElementById("loi-ich-tab1").onclick = function(event) {
+    //     openTab(event, 'loi-ich-content-1');   
+    // }
+    let loiich2 = document.getElementById("loi-ich-tab2");
+    if (loiich2){
+        loiich2.onclick=function(event) {
+            openTab(event, 'loi-ich-content-2');   
+        }
     }
-    document.getElementById("loi-ich-tab3").onclick = function(event) {
-        openTab(event, 'loi-ich-content-3');
+    // document.getElementById("loi-ich-tab2").onclick = function(event) {
+    //     openTab(event, 'loi-ich-content-2');
+    // }
+    let loiich3 = document.getElementById("loi-ich-tab3");
+    if (loiich3){
+        loiich3.onclick=function(event) {
+            openTab(event, 'loi-ich-content-3');   
+        }
     }
-    document.getElementById("loi-ich-tab1").click();
+    // document.getElementById("loi-ich-tab3").onclick = function(event) {
+    //     openTab(event, 'loi-ich-content-3');
+    // }
+    // document.getElementById("loi-ich-tab1").click();
 });
 
 $(document).ready(function() {
@@ -145,7 +163,7 @@ $(document).ready(function(){
         slidesToShow  : 5,
         slidesToScroll: 2,
         prevArrow     : '<button class = "slick-prev slick-arrow" aria-label = "Previous" type = "button" style = ""><i class = "fa fa-angle-left fa-4x" aria-hidden  = "true"></i></button>',
-    nextArrow         : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
+        nextArrow     : '<button class = "slick-next slick-arrow" aria-label = "Next" type     = "button" style = ""><i class = "fa fa-angle-right fa-4x" aria-hidden = "true"></i></button>',
         });
     });
     

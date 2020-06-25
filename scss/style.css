@@ -1192,13 +1192,13 @@ h2.bg-section-title::after {
   font-weight: 600;
 }
 
-#become .become-list-item {
+/* #become .become-list-item {
   padding: 30px 80px 30px 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 #become .item {
   position: relative;
@@ -2879,9 +2879,7 @@ body{
 
 /* ---start-cauchuyencuachungtoi--- */
 #my-Story-banner{
-  background-image: url(../images/banner.jpg);
   min-height: 350px;
-  background-size: cover;
 }
 #my-Story{
   font-family: "Open";
@@ -2921,9 +2919,7 @@ body{
 
 /* ---start-about---- */
 #about-banner{
-background-image: url(../images/banner-about.jpg);
 min-height: 250px;
-background-size: cover;
 }
 /* ----start-about-main---- */
 
@@ -3029,9 +3025,7 @@ background-size: cover;
 
 /* ----start-contact---- */
 #contact-banner{
-  background-image: url(../images/lienhebanner.jpg);
   min-height: 170px;
-  background-size: cover;
 }
 
 #banner_main-left{
@@ -3101,9 +3095,7 @@ background-size: cover;
 
 /* ----start-partner---- */
 #partner-banner{
-  background-image: url(../images/banner-partner.jpg);
   min-height:250px ;
-  background-size: cover;
 }
 /* ---start-partner-section-1--- */
 #partner_tab-1 .tabs{
@@ -3188,9 +3180,7 @@ background-size: cover;
 
 /* ----start-news-banner---- */
 #news-banner{
-  background-image: url(../images/tin-tuc-banner.jpg);
   min-height: 275px;
-  background-size: cover;
 }
 /* start-news-section-1 */
 #news-section-1 ul{
@@ -3486,9 +3476,7 @@ width: 100%;
 /* /* start trang goi tu thien */
 /* /* start banner */
 #goituthien-banner{
-  background-image: url(../images/goi-tu-thien-banner.jpg);
   min-height: 150px;
-  background-size: cover;
 }
 /* /* end banner */
 #goituthien-btn-nhan-tu-thien{
@@ -3633,9 +3621,7 @@ width: 100%;
  /* end trang goi tu thien */
  /* start trang hay tham gia */
 #hay-tham-gia-banner{
-  background-image: url(../images/hay-tham-gia-banner.jpg);
   min-height: 250px;
-  background-size: cover;
 }
 .hay-tham-gia-title{
   padding: 20px 50px 20px;
@@ -3710,16 +3696,204 @@ width: 100%;
     font-weight: 600;
 }
 .quy-trinh{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+.quy-trinh .quy-trinh-box-item{
+  position:relative;
+  text-align:center;
+  color:white;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  color: white;
+}
+.quy-trinh .quy-trinh-box-item-1{
+  background-color:#038ABB;
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+}
+.quy-trinh .quy-trinh-box-item-1,
+.quy-trinh .quy-trinh-box-item-2,
+.quy-trinh .quy-trinh-box-item-3,
+.quy-trinh .quy-trinh-box-item-4,
+.quy-trinh .quy-trinh-box-item-5{
+   display:grid;
+  grid-template-rows: repeat(1, auto 1fr auto);
+  justify-items: center;
+  padding:0 10% 0 10%;
+}
+.quy-trinh .quy-trinh-box-item-2,
+.quy-trinh .quy-trinh-box-item-3,
+.quy-trinh .quy-trinh-box-item-4,
+.quy-trinh .quy-trinh-box-item-5{
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%, 0 0);
+
+}
+.quy-trinh .quy-trinh-box-item-2{
+  background-color:#009DD6;
+}
+.quy-trinh .quy-trinh-box-item-3{
+  background-color:#03AEEF;
+}
+.quy-trinh .quy-trinh-box-item-4{
+  background-color:#0DBCFF;
+}
+.quy-trinh .quy-trinh-box-item-5{
+  background-color:#25C5FE;
+}
+.quy-trinh h4{
+  font-size: 50px;
+   margin: 0;
+    font-family: "Myriad";
+    font-weight: bold;
+}
+.quy-trinh a{
+    margin:5px 10%;
+    color: black;
+    background-color: #ebebeb;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-family: "Myriad";
+    font-size: 14px;
+    text-align: center;
+    outline: none!important;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+.quy-trinh a:hover{
+      color: #e32124;
+      text-decoration: none;
+}
+#receiver .receiver-title{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+} 
+#receiver .receiver-title h4{
+  color: #00a859;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+#receiver .receiver-title p{
+  font-size: 20px;
+}
+.receiver-content{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  padding: 0 8%;
+}
+.receiver-content-box{
+ display: grid;
+ grid-template-rows: repeat(1,auto 1fr auto);
+ text-align: center;
+ margin-right:10px ;
+}
+.receiver-content-box p{
+  margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+.receiver-content-box p.span{
+    font-size: 60px;
+    font-family: "MyriadBold";
+    color: #00a859;
+    height: 100%;
+    padding: 0;
+}
+.receiver-content-box a{
+  display: block;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    padding: 2px 6px;
+    outline: none!important;
+    text-decoration: none;
+
+}
+.receiver-content-box a:hover{
+  text-decoration: none;
+  color: #000;
+}
+.receiver-content-box .text-item-1{
+  background-color: #fbcc5d;
+}
+.receiver-content-box .text-item-2{
+  background-color: #fbaf5d;
+}
+.receiver-content-box .text-item-3{
+  background-color: #ff8041;
+}
+.receiver-content-box .text-item-4{
+  background-color: #09bdff;
+}
+.receiver-content-box .text-item-5{
+  background-color: #9ee5ff;
+}
+#tai-tro{
+  display: grid;
+  grid-template-columns: repeat(1,8fr 4fr);
   text-align: center;
 }
-.quy-trinh-item-1{
-display: grid;
-grid-row: repeat(1,auto 1fr auto);
-background-image: url(../images/become-1.png);
-min-height: 150px;
-margin-left: 10%;
+#tai-tro .tai-tro-left{
+  background-image: url(../images/truc-tiep-img.jpg);
+  background-size: cover;
+  padding: 2rem;
+}
+#tai-tro .tai-tro-left img{
+  margin-bottom: 1rem;
+  padding: 15px;
+}
+#tai-tro .tai-tro-left a{
+    font-family: "Myriad";
+    font-size: 14px;
+    padding: 6px 30px;
+    background-color: #00a859;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+#tai-tro .tai-tro-right{
+  background-color: #9FE6FF;
+  padding: 2rem;
+}
+#tai-tro .tai-tro-right img{
+  margin-bottom: 1rem;
+}
+#tai-tro .tai-tro-right a{
+    outline: none!important;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+#tai-tro .tai-tro-right a:hover{
+  color: #e32124;
+}
+#link-bt{
+  background-image: url(../images/link-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#link-bt>.row{
+  min-height: 370px;
+}
+#link-bt p{
+  font-family: "NeoRegu";
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#link-bt a{
+  color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #00afef;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+#link-bt a:hover{
+ text-decoration: none;
 }
   /* end trang hay tham gia */
