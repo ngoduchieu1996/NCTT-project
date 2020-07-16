@@ -2625,8 +2625,8 @@ body{
 .fix-home-button {
   position: fixed;
   z-index: 99999;
-  bottom: 50px;
-  left: 80px;
+  bottom: 2rem;
+  left: 4rem;
 }
 .fix-home-button img {
   width: 50px;
@@ -2634,10 +2634,15 @@ body{
 }
 .messenger{
   position: fixed; 
-  right: 50px; 
-  bottom: 80px;
+  right: 4rem; 
+  bottom: 2rem;
   width: 50px;
   height: 50px;
+  cursor: pointer;
+}
+.messenger:hover{
+  width: 55px;
+  height: 55px;
 }
 /* ---start-section-1--- */
 .index-Section-1 img{
@@ -3897,3 +3902,56 @@ width: 100%;
  text-decoration: none;
 }
   /* end trang hay tham gia */
+  /*start trang bai viet*/
+  #bai-viet-banner{
+    position: relative;
+  }
+  #bai-viet-banner img{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    
+  }
+  #bai-viet-main .search img{
+    background-color: #00afef;
+    border-color: #00afef;
+    padding: 0 5px;
+    border-radius: 0%;
+  }
+  #bai-viet-main .bai-viet-list{
+    background-color: #ec268f;
+    margin-bottom: 5px;
+    padding: 8px 0 8px 15px;
+  }
+  #bai-viet-main a{
+    color: white;
+    transition: all 0.3s ease-in;
+  }
+  #bai-viet-main a:hover{
+    text-decoration: none;
+    color: #FEFF00;
+  }
+  #bai-viet-main h4.widget-title{
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #16181a;
+  }
+  #bai-viet-main .color-green{
+    color: #00a859;
+  }
+  #bai-viet-main .color-grey{
+    color: #898a8a;
+  }
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+
+  /*end trang bai viet*/

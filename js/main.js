@@ -104,44 +104,56 @@ $(document).ready(function() {
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    
-    document.getElementById("show-all").onclick = function(event) {
-        openTab1(event, 'tab_content-item-1');
-        $('.showAll').css('display', 'block'); 
-        $('.showAll').get(0).slick.setPosition()
+    if(document.getElementById("show-all")){
+        document.getElementById("show-all").onclick = function(event) {
+            openTab1(event, 'tab_content-item-1');
+            $('.showAll').css('display', 'block'); 
+            // $('.showAll').get(0).slick.setPosition();
+        }
+        document.getElementById("show-all").click();
     }
-    document.getElementById("tai-chinh").onclick = function(event) {
-        openTab1(event, 'tab_content-item-2');
-        $('.taiChinh').css('display', 'block'); 
-        $('.taiChinh').get(0).slick.setPosition()
+    if(document.getElementById("tai-chinh")){
+        document.getElementById("tai-chinh").onclick = function(event) {
+            openTab1(event, 'tab_content-item-2');
+            $('.taiChinh').css('display', 'block'); 
+            $('.taiChinh').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("hang-hoa").onclick = function(event) {
-        openTab1(event, 'tab_content-item-3');
-        $('.hangHoa').css('display', 'block'); 
-        $('.hangHoa').get(0).slick.setPosition()
+    if(document.getElementById("hang-hoa")){
+        document.getElementById("hang-hoa").onclick = function(event) {
+            openTab1(event, 'tab_content-item-3');
+            $('.hangHoa').css('display', 'block'); 
+            $('.hangHoa').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("to-chuc").onclick = function(event) {
-        openTab1(event, 'tab_content-item-4');
-        $('.toChuc').css('display', 'block'); 
-        $('.toChuc').get(0).slick.setPosition()
+    if(document.getElementById("to-chuc")){
+        document.getElementById("to-chuc").onclick = function(event) {
+            openTab1(event, 'tab_content-item-4');
+            $('.toChuc').css('display', 'block'); 
+            $('.toChuc').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("dong-hanh").onclick = function(event) {
-        openTab1(event, 'tab_content-item-5');
-        $('.dongHanh').css('display', 'block'); 
-        $('.dongHanh').get(0).slick.setPosition()
+    if(document.getElementById("dong-hanh")){
+        document.getElementById("dong-hanh").onclick = function(event) {
+            openTab1(event, 'tab_content-item-5');
+            $('.dongHanh').css('display', 'block'); 
+            $('.dongHanh').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("truyen-thong").onclick = function(event) {
-        openTab1(event, 'tab_content-item-6');
-        $('.truyenThong').css('display', 'block'); 
-        $('.truyenThong').get(0).slick.setPosition()
+    if(document.getElementById("truyen-thong")){
+        document.getElementById("truyen-thong").onclick = function(event) {
+            openTab1(event, 'tab_content-item-6');
+            $('.truyenThong').css('display', 'block'); 
+            $('.truyenThong').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("khac").onclick = function(event) {
-        openTab1(event, 'tab_content-item-7');
-        $('.khac').css('display', 'block'); 
-        $('.khac').get(0).slick.setPosition()
+    if(document.getElementById("khac")){
+        document.getElementById("khac").onclick = function(event) {
+            openTab1(event, 'tab_content-item-7');
+            $('.khac').css('display', 'block'); 
+            $('.khac').get(0).slick.setPosition();
+        }
     }
-    document.getElementById("show-all").click();
-    
 });
 
 // --partner-show-all--
@@ -239,35 +251,44 @@ $(document).ready(function() {
     function openTab(evt, tabName) {
         let i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+        if(tabcontent){
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    if(document.getElementById("tab-1")){
+        document.getElementById("tab-1").onclick = function(event) {
+            openTab(event, 'tab1');      
         }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById("tab-1").click();
     }
-    
-    document.getElementById("tab-1").onclick = function(event) {
-        openTab(event, 'tab1');
+    if(document.getElementById("tab-2")){
+        document.getElementById("tab-2").onclick = function(event) {
+            openTab(event, 'tab2');
+        }
     }
-    
-    document.getElementById("tab-2").onclick = function(event) {
-        openTab(event, 'tab2');
+    if(document.getElementById("tab-3")){
+        document.getElementById("tab-3").onclick = function(event) {
+            openTab(event, 'tab3');
+        }
     }
-    document.getElementById("tab-3").onclick = function(event) {
-        openTab(event, 'tab3');
+    if(document.getElementById("tab-4")){
+        document.getElementById("tab-4").onclick = function(event) {
+            openTab(event, 'tab4');
+        }
     }
-    document.getElementById("tab-4").onclick = function(event) {
-        openTab(event, 'tab4');
+    if(document.getElementById("tab-5")){
+        document.getElementById("tab-5").onclick = function(event) {
+            openTab(event, 'tab5');
+        }
     }
-    document.getElementById("tab-5").onclick = function(event) {
-        openTab(event, 'tab5');
-    }
-    
-    document.getElementById("tab-1").click();
 });
 
 $(document).ready(function() {
@@ -328,18 +349,22 @@ $(document).ready(function() {
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    
-    document.getElementById("news-tablinks-1").onclick = function(event) {
-        openNewsTab(event, 'news-tabContent-1');
+    if(document.getElementById("news-tablinks-1")){
+        document.getElementById("news-tablinks-1").onclick = function(event) {
+            openNewsTab(event, 'news-tabContent-1');
+        }
+        document.getElementById("news-tablinks-1").click();
     }
-    
-    document.getElementById("news-tablinks-2").onclick = function(event) {
-        openNewsTab(event, 'news-tabContent-2');
+    if(document.getElementById("news-tablinks-2")){
+        document.getElementById("news-tablinks-2").onclick = function(event) {
+            openNewsTab(event, 'news-tabContent-2');
+        }
     }
-    document.getElementById("news-tablinks-3").onclick = function(event) {
-        openNewsTab(event, 'news-tabContent-3');
+    if(document.getElementById("news-tablinks-3")){
+        document.getElementById("news-tablinks-3").onclick = function(event) {
+            openNewsTab(event, 'news-tabContent-3');
+        }
     }
-    document.getElementById("news-tablinks-1").click();
 });
 
 // -----end news tab----
