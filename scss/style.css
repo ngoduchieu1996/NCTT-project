@@ -2581,6 +2581,9 @@ h2.bg-section-title::after {
   border-left: 20px solid #b0eaff;
 }
 /*# sourceMappingURL=style.css.map */
+*{
+  box-sizing: border-box;
+}
 body{
   src: url(/fonts/UTM-Neo-Sans-Intel.ttf);
   font-family: UTMNeoSans;
@@ -2772,11 +2775,11 @@ body{
 .index-Section-5{
   background-color: #D42281;
   min-height: 400px;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 49% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
   position: relative;
   font-size: 0.65rem;
   color: white;
-  padding: 40px 0;
+  padding: 5% 0;
 }
 .index-Section-5 a{
   text-decoration: none;
@@ -2817,6 +2820,16 @@ body{
 .index-Section-5 img{
   width: 100%;
   height: auto;
+}
+.index-Section-5 .index-news-box{
+  margin-bottom: 2em;
+}
+.index-Section-5 .index-news-box h2{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.index-Section-5 .index-news-box p{
+  margin: 0;
 }
 /* ---end-section-5--- */
 /* ---start-section-6--- */

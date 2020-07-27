@@ -155,7 +155,6 @@ $(document).ready(function() {
         }
     }
 });
-
 // --partner-show-all--
 $(document).ready(function(){
     $('.showAll').slick({
@@ -372,13 +371,30 @@ $(document).ready(function(){
     $('#goi_tu-thien .goituthien').slick({
     infinite      : true,
     slidesToShow  : 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     autoplay      : true,
     autoplaySpeed : 3000,
     prevArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: white;left : -2%;;outline: none;transform: translateY(-50%);"><i class = "fa fa-angle-left fa-3x" aria-hidden  = "true"></i></button>',
     nextArrow     : '<button class = "" aria-label = "Previous" type = "button" style = "background: transparent;border: none;position: absolute;top: 30%;color: white;right: -2%;outline : none;transform: translateY(-50%);"><i class = "fa fa-angle-right fa-3x" aria-hidden = "true"></i></button>',
+    responsive    : true, 
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
     });
-    });
+});
 
 $(document).ready(function(){
     $('.news_aboutus').slick({
@@ -392,3 +408,9 @@ $(document).ready(function(){
     });
 });
 // --end -trang news---
+
+// start news index style flex
+$(document).ready(function(){
+document.querySelectorAll(".index-Section-5 .index-news-box")[0].style.flexDirection="column";
+})
+// end news index style flex
