@@ -2649,7 +2649,7 @@ body{
 }
 /* ---start-section-1--- */
 .index-Section-1 img{
-  max-height: 350px;
+  height: 350px;
   object-fit:cover;
 }
 /* ---end-section-1--- */
@@ -3105,7 +3105,6 @@ min-height: 250px;
   background-color:#03AEEF ;
   color: white;
     width: 30%;
-    margin-left: 34%;
     font-size: 14px;
     padding: 2% 0;
 }
